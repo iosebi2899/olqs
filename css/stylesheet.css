@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'BPG 2017 DejaVu Sans Caps';
+    src: url('./../fonts/./../fonts/BPG2017DejaVuSansCaps.eot');
+    src: url('./../fonts/./../fonts/BPG2017DejaVuSansCaps.eot?#iefix') format('embedded-opentype'),
+        url('./../fonts/./../fonts/BPG2017DejaVuSansCaps.woff2') format('woff2'),
+        url('./../fonts/BPG2017DejaVuSansCaps.woff') format('woff'),
+        url('./../fonts/BPG2017DejaVuSansCaps.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BPG 2017 DejaVu Sans regular';
+    src: url('./../fonts/BPG2017DejaVuSans.eot');
+    src: url('./../fonts/BPG2017DejaVuSans.eot?#iefix') format('embedded-opentype'),
+        url('./../fonts/BPG2017DejaVuSans.woff2') format('woff2'),
+        url('./../fonts/BPG2017DejaVuSans.woff') format('woff'),
+        url('./../fonts/BPG2017DejaVuSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BPG 2017 DejaVu Sans';
+    src: url('./../fonts/BPG2017DejaVuSans-Oblique.eot');
+    src: url('./../fonts/BPG2017DejaVuSans-Oblique.eot?#iefix') format('embedded-opentype'),
+        url('./../fonts/BPG2017DejaVuSans-Oblique.woff2') format('woff2'),
+        url('./../fonts/BPG2017DejaVuSans-Oblique.woff') format('woff'),
+        url('./../fonts/BPG2017DejaVuSans-Oblique.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BPG 2017 DejaVu Sans bold';
+    src: url('./../fonts/BPG2017DejaVuSans-Bold.eot');
+    src: url('./../fonts/BPG2017DejaVuSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./../fonts/BPG2017DejaVuSans-Bold.woff2') format('woff2'),
+        url('./../fonts/BPG2017DejaVuSans-Bold.woff') format('woff'),
+        url('./../fonts/BPG2017DejaVuSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BPG 2017 DejaVu Sans';
+    src: url('./../fonts/BPG2017DejaVuSans-BoldOblique.eot');
+    src: url('./../fonts/BPG2017DejaVuSans-BoldOblique.eot?#iefix') format('embedded-opentype'),
+        url('./../fonts/BPG2017DejaVuSans-BoldOblique.woff2') format('woff2'),
+        url('./../fonts/BPG2017DejaVuSans-BoldOblique.woff') format('woff'),
+        url('./../fonts/BPG2017DejaVuSans-BoldOblique.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+

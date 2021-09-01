@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>რეგისტრაცია</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/1bd888af31.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header" class="main-header reg-header">
+        <a href="#"><i class="fas fa-user-circle"></i> ავტორიზაცია</a>
+    </header>
+    <main class="reg-main">
+        <div class="routeDiv">
+            <div class="target"></div>
+            <p class="route"><a href="index.html">მთავარი</a> > რეგისტრაცია</p>
+        </div>
+        <section class="registration">
+            <h1>ᲠᲔᲒᲘᲡᲢᲠᲐᲪᲘᲐ</h1>
+            <form class="flex-form" action="/action_page.php">
+                <input type="number" class="reg-input" placeholder="პირადი ნომერი"></input>
+                <input type="text" class="reg-input" placeholder="თქვენი საარჩევნო ოლქის ნომერი"></input>
+                <input type="name" class="reg-input" placeholder="სახელი"></input>
+                <input type="number" class="reg-input" placeholder="თქვენი საარჩევნო უბნის ნომერი"></input>
+                <input type="text" class="reg-input" placeholder="გვარი"></input>
+                <select name="position" class="reg-input" id="">
+                    <option value="tavikaci">კომისიის თავმჯდომარე</option>
+                    <option value="mdivani">კომისიის მდივანი</option>
+                </select>
+                <input type="submit" class="reg-submit" value="რეგისტრაცია"></input>
+            </form>
+        </section>
+        <section class="companies">
+            <a href="https://www.usaid.gov/"><img src="img/usaid.png" alt="usad"></a>
+            <a href="https://cesko.ge/"><img src="img/cesko.png" alt="cesko"></a>
+            <a href="http://www.electionreforms.ge/"><img src="img/Training-Center-Logo.png" alt="Training-Center-Logo"></a>
+            <a href="https://www.ifes.org/"><img src="img/ifes.png" alt="ifes"></a>
+        </section>
+    </main>
+    <footer>
+        <p>© 2021 ᲔᲚᲔᲥᲢᲠᲝᲜᲣᲚᲘ ᲡᲐᲡᲬᲐᲕᲚᲝ ᲞᲠᲝᲒᲠᲐᲛᲐ „ᲙᲔᲜᲭᲘᲡᲧᲠᲘᲡ ᲨᲔᲓᲔᲒᲔᲑᲘᲡ ᲨᲔᲛᲐᲯᲐᲛᲔᲑᲔᲚᲘ ᲝᲥᲛᲘᲡ ᲨᲔᲓᲒᲔᲜᲘᲡ ᲢᲔᲥᲜᲘᲙᲐ“</p>
+        <a href="#header"><i class="fas fa-arrow-up"></i></a>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

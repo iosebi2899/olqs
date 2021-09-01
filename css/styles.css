@@ -1,0 +1,210 @@
+
+.main-header{
+    position: relative;
+    height: 100vh;
+    padding-left: 130px;
+}
+.reg-header{
+    height: 130px;
+}
+.main-header a{
+    font-size: 16px;
+    line-height: 19px;
+    font-family: 'BPG 2017 DejaVu Sans bold',monospace;
+    padding:20px;
+    background-color: #4CBA78;
+    border-radius: 4px;
+    display: inline-block;
+    position: absolute;
+    right: 130px;
+    top: 35px;
+    color: white;
+    transition: 0.3s;
+}
+.main-header a:hover{
+    background-color: #656565;
+}
+.main-header h1{
+    font-size: 34px;
+    line-height: 51px;
+    font-family: 'BPG 2017 DejaVu Sans bold',monospace;
+    width: 50%;
+    padding-top: 12%;
+    color: #343B43;
+}
+.personal-id{
+    display: flex;
+    justify-content: space-between;
+    width: 540px;
+    height: 100px;
+    margin-top: 60px;
+    box-shadow: 0 10px 30px #3333330D;
+    padding: 20px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+}
+.personal-id .id{
+    height: 60px;
+    width: 350px;
+    font-family: 'BPG 2017 DejaVu Sans bold',monospace;
+    font-size: 16px;
+    color: rgb(52, 59, 67);
+    border: 0;
+    outline: 0;
+}
+.personal-id .id::placeholder{
+    color: rgba(52, 59, 67,0.3);
+}
+.personal-id .submit{
+    width: 180px;
+    height: 60px;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: 'BPG 2017 DejaVu Sans bold',monospace;
+    padding:20px;
+    background-color: #4CBA78;
+    border-radius: 4px;
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    transition: 0.3s;
+}
+.personal-id .submit:hover{
+    background-color: #656565;
+}
+.error-border{
+    border-color:#EB4D4B;
+}
+.error-text{
+    color: #EB4D4B;
+}
+.error-text::placeholder{
+    color: #EB4D4B !important;
+}
+.error-msg{
+    font-size: 13px;
+    font-family: 'BPG 2017 DejaVu Sans bold',monospace;
+    color: #EB4D4B;
+    display: none;
+    margin-top: 30px;
+}
+.shown{
+    display: block;
+}
+/* registration */
+.reg-main{
+   
+}
+.routeDiv{
+    position: relative;
+    margin-bottom: 60px;
+    margin-left: 130px;
+}
+.target{
+    position: absolute;
+    width:4px;
+    height: 15px;
+    border-radius: 4px;
+    background-color: #343B43;
+    left: 0;
+    bottom: 0;
+}
+.route,.route a{
+    color:#343B43;
+    font-family: 'BPG 2017 DejaVu Sans regular',monospace;
+    font-size: 13px;
+    word-spacing: 6px;
+}
+.route{
+    margin-left: 12px;
+}
+.registration{
+    background-color: #F8FAFB;
+    padding: 30px 130px 110px 130px;
+}
+.registration h1{
+    font-size: 34px;
+    margin-bottom: 35px;
+    font-family: 'BPG 2017 DejaVu Sans bold',monospace;
+    color: #343B43;
+}
+.flex-form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 55px;
+    grid-column-gap: 30px;
+}
+.reg-input{
+    height: 60px;
+    font-family: 'BPG 2017 DejaVu Sans bold',monospace;
+    padding: 20px 30px;
+    background-color: white;
+    border:1px solid #3333331A;
+}
+.reg-input::placeholder{
+    font-family: 'BPG 2017 DejaVu Sans bold',monospace;
+}
+.reg-submit{
+    grid-column-end: span 2;
+    height: 60px;
+    font-family: 'BPG 2017 DejaVu Sans bold',monospace;
+    font-size: 16px;
+    background-color: rgba(52, 59, 67,0.3);
+    border:rgba(52, 59, 67,0.3);
+    border-radius:4px;
+    color: rgba(52, 59, 67,0.3);
+}
+/* companies */
+.companies{
+    display: flex;
+    justify-content: space-between;
+    padding:150px 130px;
+}
+footer{
+    background-color: #F8FAFB;
+    padding:30px 130px;
+    display: flex;
+    justify-content: space-between;
+}
+footer p{
+    font-size: 13px;
+    font-family: 'BPG 2017 DejaVu Sans bold',monospace;
+    color: #343B43;
+}
+.fa-arrow-up{
+    color: #4CBA78;
+    transition: 0.3s;
+}
+.fa-arrow-up:hover{
+    color: #656565;
+}
+.main-section{
+    padding: 80px 130px 140px 130px;
+    background-color: #F8FAFB;
+}
+.main-section h2{
+    font-size:34px;
+    font-family: 'BPG 2017 DejaVu Sans bold',monospace;
+    color: #343B43;
+}
+.main-section h3{
+    font-size: 21px;
+    font-family: 'BPG 2017 DejaVu Sans bold',monospace;
+    color:#343B43 ;
+}
+.flex-p{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0 90px 0;
+    color: #343B43;
+}
+.flex-p p{
+    width: calc(50% - 15px);
+    color: #343B43;
+    font-size: 16px;
+    line-height: 22.4px;
+    font-family: 'BPG 2017 DejaVu Sans regular',monospace;
+}
