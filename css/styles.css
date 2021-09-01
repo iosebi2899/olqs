@@ -91,13 +91,7 @@
     display: none;
     margin-top: 30px;
 }
-.shown{
-    display: block;
-}
 /* registration */
-.reg-main{
-   
-}
 .routeDiv{
     position: relative;
     margin-bottom: 60px;
@@ -124,6 +118,7 @@
 .registration{
     background-color: #F8FAFB;
     padding: 30px 130px 110px 130px;
+    position: relative;
 }
 .registration h1{
     font-size: 34px;
@@ -143,6 +138,19 @@
     padding: 20px 30px;
     background-color: white;
     border:1px solid #3333331A;
+    color: rgb(52, 59, 67);
+}
+.disabled-value{
+    color: rgba(52, 59, 67,0.3) !important;
+}
+.reg-input::placeholder{
+    color: rgba(52, 59, 67,0.3);
+}
+.error-input{
+    border-color:#EB4D4B;
+}
+.error-input::placeholder{
+    color:#EB4D4B;
 }
 .reg-input::placeholder{
     font-family: 'BPG 2017 DejaVu Sans bold',monospace;
@@ -156,7 +164,20 @@
     border:rgba(52, 59, 67,0.3);
     border-radius:4px;
     color: rgba(52, 59, 67,0.3);
+    cursor: pointer;
 }
+.tiny{
+    color: #EB4D4B;
+    font-size: 13px;
+    font-family: 'BPG 2017 DejaVu Sans bold',monospace;
+    text-align: center;
+    display: none;
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 /* companies */
 .companies{
     display: flex;
@@ -207,4 +228,7 @@ footer p{
     font-size: 16px;
     line-height: 22.4px;
     font-family: 'BPG 2017 DejaVu Sans regular',monospace;
+}
+.shown{
+    display: block;
 }
