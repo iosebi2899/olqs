@@ -4,7 +4,7 @@ $('.submit').click(function() {
         $('.id').addClass('error-text');
         $('.error-msg').addClass('shown')
     }else{
-        window.open('registration.html','_blank');
+        window.open('registration.html');
     }
  });
  $('.reg-submit').click(function() {
@@ -28,7 +28,7 @@ $('.submit').click(function() {
         $('.reg-input').removeClass('error-input');
         $('#surname').addClass('error-input');
         $('.tiny').addClass('shown');
-    }else if($('#position').val()==""){
+    }else if($('.disabled-value').is(':selected')){
         $('.reg-input').removeClass('error-input');
         $('#position').addClass('error-input');
         $('.tiny').addClass('shown');
@@ -36,5 +36,13 @@ $('.submit').click(function() {
     else{
         $('.reg-input').removeClass('error-input');
         $('.tiny').removeClass('shown');
+        window.open('test.html');
+
     }
  });
+ var position = $('#poistion')
+ $('.reg-input').change(function(){
+     if($('#id').val()&&$('#olqNum').val()&&$('#name').val()&&$('#strNum').val()&&$('#surname').val()&&position.val()!==''){
+         $('.reg-submit').addClass('active-submit')
+     }
+ })
