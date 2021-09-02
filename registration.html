@@ -12,21 +12,21 @@
 </head>
 <body>
     <header id="header" class="main-header reg-header">
-        <a href="#"><i class="fas fa-user-circle"></i> ავტორიზაცია</a>
+        <a id="a" href="auth.html"><i class="fas fa-user-circle"></i> ავტორიზაცია</a>
     </header>
     <main class="reg-main">
-        <div class="routeDiv">
-            <div class="target"></div>
-            <p class="route"><a href="index.html">მთავარი</a> <i class="fas fa-chevron-right"></i> რეგისტრაცია</p>
-        </div>
         <section class="registration">
+            <div class="routeDiv">
+                <div class="target"></div>
+                <p class="route"><a href="index.html">მთავარი</a> <i class="fas fa-chevron-right"></i> რეგისტრაცია</p>
+            </div>
             <h1>ᲠᲔᲒᲘᲡᲢᲠᲐᲪᲘᲐ</h1>
             <form class="flex-form" novalidate>
-                <input id="id" type="number" class="reg-input" placeholder="პირადი ნომერი"></input>
-                <input id='olqNum' type="text" class="reg-input" placeholder="თქვენი საარჩევნო ოლქის ნომერი"></input>
-                <input id='name' type="name" class="reg-input" placeholder="სახელი"></input>
-                <input id='strNum' type="number" class="reg-input" placeholder="თქვენი საარჩევნო უბნის ნომერი"></input>
-                <input id="surname" type="text" class="reg-input" placeholder="გვარი"></input>
+                <input id="id" type="number" class="reg-input" placeholder="პირადი ნომერი">
+                <input id='olqNum' type="text" class="reg-input" placeholder="თქვენი საარჩევნო ოლქის ნომერი">
+                <input id='name' type="name" class="reg-input" placeholder="სახელი">
+                <input id='strNum' type="number" class="reg-input" placeholder="თქვენი საარჩევნო უბნის ნომერი">
+                <input id="surname" type="text" class="reg-input" placeholder="გვარი">
                 <select id="position" name="position" class="reg-input" >
                     <option class="disabled-value" value="disabled" selected hidden>პოზიცია</option>
                     <option value="tavikaci">კომისიის თავმჯდომარე</option>

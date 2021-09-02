@@ -46,3 +46,21 @@ $('.submit').click(function() {
          $('.reg-submit').addClass('active-submit')
      }
  })
+ 
+ $('#auth-submit').click(function() {
+     if(/@/.test($("#auth-email").val())==false){
+        $('.auth-input').removeClass('error-input');
+        $('#auth-email').addClass('error-input');
+        $('.auth-tiny').html('ავტორიზაციისთვის შეიყვანეთ ელ.ფოსტა');
+        $('.auth-tiny').addClass('shown');
+     }else if(!$('#auth-password').val()){
+        $('.auth-input').removeClass('error-input');
+        $('#auth-password').addClass('error-input');
+        $('.auth-tiny').html('ავტორიზაციისთვის შეიყვანეთ პაროლი');
+        $('.auth-tiny').addClass('shown');
+     }else{
+        $('.auth-input').removeClass('error-input');
+        $('.auth-tiny').removeClass('shown');
+         return true;
+     }
+ });

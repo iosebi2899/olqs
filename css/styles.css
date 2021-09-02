@@ -4,10 +4,14 @@
     height: 100vh;
     padding-left: 130px;
 }
+.auth-header{
+    height: 128px;
+    background-color: white;
+}
 .reg-header{
     height: 130px;
 }
-.main-header a{
+.main-header #a{
     font-size: 16px;
     line-height: 19px;
     font-family: 'BPG 2017 DejaVu Sans bold',monospace;
@@ -54,9 +58,9 @@
     outline: 0;
 }
 .personal-id .id::placeholder{
-    color: rgba(52, 59, 67,0.3);
+    color: rgba(52, 59, 67,0.6);
 }
-.personal-id .submit{
+.personal-id .submit,.auth form .submit{
     width: 180px;
     height: 60px;
     font-size: 16px;
@@ -95,7 +99,6 @@
 .routeDiv{
     position: relative;
     margin-bottom: 60px;
-    margin-left: 130px;
 }
 .target{
     position: absolute;
@@ -120,7 +123,7 @@
     padding: 30px 130px 110px 130px;
     position: relative;
 }
-.registration h1{
+.registration h1,.auth h1{
     font-size: 34px;
     margin-bottom: 35px;
     font-family: 'BPG 2017 DejaVu Sans bold',monospace;
@@ -141,16 +144,16 @@
     color: rgb(52, 59, 67);
 }
 .disabled-value{
-    color: rgba(52, 59, 67,0.3) !important;
+    color: rgba(52, 59, 67,0.6) !important;
 }
 .reg-input::placeholder{
-    color: rgba(52, 59, 67,0.3);
+    color: rgba(52, 59, 67,0.6);
 }
 .error-input{
-    border-color:#EB4D4B;
+    border-color:#EB4D4B !important;
 }
 .error-input::placeholder{
-    color:#EB4D4B;
+    color:#EB4D4B !important;
 }
 .reg-input::placeholder{
     font-family: 'BPG 2017 DejaVu Sans bold',monospace;
@@ -235,7 +238,7 @@ footer p{
     font-family: 'BPG 2017 DejaVu Sans regular',monospace;
 }
 .shown{
-    display: block;
+    display: block !important;
 }
 /* test-page */
 .test-header{
@@ -309,4 +312,39 @@ footer p{
     .fa-arrow-right{
         font-size: 18px;
     }
+}
+/* auth */
+.auth{
+    padding: 30px 130px 170px 130px;
+    background-image: url(./../img/banner.png);
+    position: relative;
+}
+.auth form{
+    width: 40%;
+}
+.auth form input{
+    width: 100%;
+    margin-top: 35px;
+    border-color: #3333331A;
+    border-radius: 4px;
+    padding: 21px 30px;
+    border-style: solid;
+    
+}
+.auth form input::placeholder{
+    color: rgba(52, 59, 67,0.6);
+    font-family: 'BPG 2017 DejaVu Sans bold',monospace;
+}
+.auth form .submit{
+    width: 100%;
+}
+.auth-tiny{
+    display: none;
+    width: calc((100% - 260px)*40/100);
+    font-size: 13px;
+    color: #EB4D4B;
+    font-family: 'BPG 2017 DejaVu Sans bold',monospace;
+    text-align: center;
+    position: absolute;
+    bottom: 140px;
 }
