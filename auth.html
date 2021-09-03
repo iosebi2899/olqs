@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>ავტორიზაცია</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/stylesheet.css">
@@ -12,7 +12,8 @@
 </head>
 <body>
     <header id="header" class="main-header auth-header">
-        <a id="a" href="#"><i class="fas fa-user-circle"></i> ავტორიზაცია</a>
+        <a class="shown" id="a" href="auth.html"><i class="fas fa-user-circle"></i> ავტორიზაცია</a>
+        <a id="a" href="auth.html">გამოსვლა <i class="fas fa-sign-out-alt"></i></a>
     </header>
     <main>
         <section class="auth">
@@ -22,9 +23,9 @@
             </div>
             <h1>ᲐᲕᲢᲝᲠᲘᲖᲐᲪᲘᲐ</h1>
             <form action="" onclick="return false" novalidate>
-                <input class="auth-input" type="email" name="email" id="auth-email" placeholder="ელ.ფოსტა">
-                <input class="auth-input" type="password" id="auth-password" placeholder="პაროლი">
-                <input id="auth-submit" type="submit" class="submit" value="ავტორიზაცია">
+                <input name="auth-email" class="auth-input" type="email" name="email" id="auth-email" placeholder="ელ.ფოსტა">
+                <input name="auth-password" class="auth-input" type="password" id="auth-password" placeholder="პაროლი">
+                <input name="auth-submit" id="auth-submit" type="submit" class="submit" value="ავტორიზაცია">
             </form>
             <p class="auth-tiny"></p>
         </section>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>რეგისტრაცია</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/stylesheet.css">
@@ -12,7 +12,8 @@
 </head>
 <body>
     <header id="header" class="main-header reg-header">
-        <a id="a" href="auth.html"><i class="fas fa-user-circle"></i> ავტორიზაცია</a>
+        <a class="shown" id="a" href="auth.html"><i class="fas fa-user-circle"></i> ავტორიზაცია</a>
+        <a id="a" href="auth.html">გამოსვლა <i class="fas fa-sign-out-alt"></i></a>
     </header>
     <main class="reg-main">
         <section class="registration">
@@ -21,18 +22,25 @@
                 <p class="route"><a href="index.html">მთავარი</a> <i class="fas fa-chevron-right"></i> რეგისტრაცია</p>
             </div>
             <h1>ᲠᲔᲒᲘᲡᲢᲠᲐᲪᲘᲐ</h1>
-            <form class="flex-form" novalidate>
-                <input id="id" type="number" class="reg-input" placeholder="პირადი ნომერი">
-                <input id='olqNum' type="text" class="reg-input" placeholder="თქვენი საარჩევნო ოლქის ნომერი">
-                <input id='name' type="name" class="reg-input" placeholder="სახელი">
-                <input id='strNum' type="number" class="reg-input" placeholder="თქვენი საარჩევნო უბნის ნომერი">
-                <input id="surname" type="text" class="reg-input" placeholder="გვარი">
-                <select id="position" name="position" class="reg-input" >
-                    <option class="disabled-value" value="disabled" selected hidden>პოზიცია</option>
-                    <option value="tavikaci">კომისიის თავმჯდომარე</option>
-                    <option value="mdivani">კომისიის მდივანი</option>
-                </select>
-                <input type="submit" onclick="return false" class="reg-submit" value="რეგისტრაცია"></input>
+            <form class="flex-form" novalidate autocomplete="off">
+                <input name="id" id="id" type="number" class="reg-input" placeholder="პირადი ნომერი">
+                <div class="reg-input autocomplete-input autocomplete">
+                    <input name="olqNum" id='olqNum' type="text" class="reg-input" placeholder="თქვენი საარჩევნო ოლქის ნომერი">
+                </div>
+                <input name="name" id='name' type="name" class="reg-input" placeholder="სახელი">
+                <div class="reg-input autocomplete-input autocomplete">
+                    <input name="strNum" id='strNum' type="number" class="reg-input" placeholder="თქვენი საარჩევნო უბნის ნომერი">
+                </div>
+                <input name="surname" id="surname" type="text" class="reg-input" placeholder="გვარი">
+                <div class=" reg-input custom-select">
+                    <select id="position" name="position" class="reg-input select-input" >
+                        <option class="disabled-value" value="disabled" selected hidden>პოზიცია</option>
+                        <option id="tavikaci" value="tavikaci">კომისიის თავმჯდომარე</option>
+                        <option id="mdivani" value="mdivani">კომისიის მდივანი</option>
+                    </select>
+                    <div class="select_arrow"><i class="fas fa-chevron-down"></i></div>
+                </div>
+                <input name="submit" type="submit" onclick="return false" class="reg-submit" value="რეგისტრაცია"></input>
             </form>
             <p class="tiny">დაფიქსირდა შეცდომა, აუცილებელია ყველა ველის შევსება</p>
         </section>

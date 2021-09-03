@@ -1,4 +1,7 @@
-
+.reg-input:focus,select:focus{
+    border:1px solid #343B43 !important;
+    outline: 0 !important;
+}
 .main-header{
     position: relative;
     height: 100vh;
@@ -11,6 +14,7 @@
 .reg-header{
     height: 130px;
 }
+
 .main-header #a{
     font-size: 16px;
     line-height: 19px;
@@ -18,23 +22,47 @@
     padding:20px;
     background-color: #4CBA78;
     border-radius: 4px;
-    display: inline-block;
+    display: none;
     position: absolute;
     right: 130px;
     top: 35px;
     color: white;
     transition: 0.3s;
 }
-.main-header a:hover{
+.main-header #a:hover{
     background-color: #656565;
 }
 .main-header h1{
     font-size: 34px;
     line-height: 51px;
     font-family: 'BPG 2017 DejaVu Sans bold',monospace;
-    width: 50%;
+    width: 60%;
     padding-top: 12%;
     color: #343B43;
+}
+.scroll-line{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 0px;
+    height: 73px;
+}
+.green-line{
+    width: 2.5px;
+    background-color: #4CBA78;
+    height: 24px;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    z-index: 123;
+}
+.grey-line{
+    bottom: 0;
+    height: 50px;
+    width: 2.5px;
+    border-radius: 6px;
+    background-color: #D6D8D9;
+    position: absolute;
 }
 .personal-id{
     display: flex;
@@ -136,10 +164,12 @@
     grid-column-gap: 30px;
 }
 .reg-input{
+    font-size: 16px;
     height: 60px;
     font-family: 'BPG 2017 DejaVu Sans bold',monospace;
     padding: 20px 30px;
     background-color: white;
+    border-radius: 4px;
     border:1px solid #3333331A;
     color: rgb(52, 59, 67);
 }
@@ -192,6 +222,12 @@
     justify-content: space-between;
     padding:150px 130px;
 }
+.companies a{
+    width: auto;
+}
+.companies a img{
+    height: 100px;
+}
 footer{
     background-color: #F8FAFB;
     padding:30px 130px;
@@ -213,6 +249,13 @@ footer p{
 .main-section{
     padding: 80px 130px 140px 130px;
     background-color: #F8FAFB;
+}
+.test-main-section{
+    padding-top:0;
+    padding-bottom: 89px;
+}
+.test-main-section h2{
+    font-size: 21px !important;
 }
 .main-section h2{
     font-size:34px;
@@ -277,7 +320,7 @@ footer p{
 .fa-arrow-right{
     margin-left: 10px;
     font-size: 16px;
-    background-color: #F8FAFB;
+    background-color: #EFF4F6;
     border-radius: 4px;
     padding: 7px;
 }
@@ -323,12 +366,15 @@ footer p{
     width: 40%;
 }
 .auth form input{
+    font-size: 16px;
     width: 100%;
     margin-top: 35px;
     border-color: #3333331A;
     border-radius: 4px;
     padding: 21px 30px;
     border-style: solid;
+    font-family: 'BPG 2017 DejaVu Sans bold',monospace;
+    color: rgb(52, 59, 67);
     
 }
 .auth form input::placeholder{
@@ -347,4 +393,141 @@ footer p{
     text-align: center;
     position: absolute;
     bottom: 140px;
+}
+.select-input{
+    height: auto;
+    width: 100%;
+    border: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    color: rgba(52, 59, 67,0.6) !important;
+}
+.autocomplete-input{
+    padding: 0;
+    border: 0;
+}
+.autocomplete-input:focus{
+    outline: 0;
+}
+
+#olqNum, #strNum{
+    width: 100%;
+    height: 58px;
+}
+.autocomplete {
+    /*the container must be positioned relative:*/
+    position: relative;
+    display: inline-block;
+  }
+  .autocomplete-items {
+    position: absolute;
+    border: 1px solid #4CBA78;
+    border-radius: 4px;
+    font-family: 'BPG 2017 DejaVu Sans bold',monospace;
+    font-size: 13px;
+    z-index: 99;
+    padding: 10px;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: calc(100% + 10px);
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 10px 30px #3333331A;
+  }
+  .autocomplete-items div {
+    cursor: pointer;
+    color: #343B43;
+    transition: 0.3s;
+    padding: 10px 20px;
+    margin:0 10px;
+    border: 0;
+    border-radius: 4px;
+  }
+  .autocomplete-items div:hover {
+    /*when hovering an item:*/
+    background-color: #4CBA78;
+    color: white;
+  }
+  .autocomplete-active {
+    /*when navigating through the items using the arrow keys:*/
+    background-color: DodgerBlue !important;
+    color: #ffffff;
+  }
+.select-input option{
+    padding: 5px;
+    font-family: 'BPG 2017 DejaVu Sans bold',monospace;
+}
+.select-input:focus{
+    border:1px solid #343B43 !important;
+}
+.select_arrow {
+    position: absolute;
+    top: 19px;
+    right: 30px;
+    transition: 0.3s;
+    pointer-events: none;
+    color: #656565;
+   
+}
+.select-input::-ms-expand {
+    display: none;
+}
+.select-input:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+.select-input:hover ~ .select_arrow,
+.select-input:focus ~ .select_arrow {
+    color: #343B43;
+}
+.select-input:disabled ~ .select_arrow {
+    border-top-color: #cccccc;
+}
+.custom-select{
+    padding: 0 !important;
+    position: relative;
+}
+.custom-select select {
+    display: none; /*hide original SELECT element: */
+  }
+  .select-selected {
+    color: rgba(52, 59, 67,0.6) !important;
+    padding: 20px 30px !important;
+    border: 0;
+  }
+  
+  .select-items div,.select-selected {
+    color: #343B43;
+    transition: 0.3s;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 4px;
+  }
+  .same-as-selected{
+      color: white !important;
+  }
+  .select-items {
+    position: absolute;
+    top: calc(100% + 10px);
+    color: rgba(52, 59, 67,0.6) !important;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: white;
+    z-index: 99;
+    border-radius: 4px;
+    border:1px solid #4CBA78;
+  }
+  .select-hide {
+    display: none;
+  }
+  .select-items div:hover, .same-as-selected {
+    background-color: #4CBA78;
+    color: white;
+  }
+  .filled{
+    color: rgb(52, 59, 67) !important;
 }
