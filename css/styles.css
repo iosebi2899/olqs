@@ -531,3 +531,6 @@ footer p{
   .filled{
     color: rgb(52, 59, 67) !important;
 }
+.layout{
+    background-image: url(./../img/layout.svg);
+}
