@@ -12,7 +12,7 @@ $('.submit').click(function() {
     if(/^(?=.*\d).{11}$/.test($('#id').val())==false){
         $('#id').addClass('error-input');
         $('.tiny').addClass('shown');
-    }else if(!$('#olqNum').val()){
+    }else if(jQuery.inArray($('#olqNum').val(), olqNum)==-1){
         $('.reg-input').removeClass('error-input');
         $('#olqNum').addClass('error-input');
         $('.tiny').addClass('shown');
@@ -264,6 +264,13 @@ $('#olqNum').on('keyup',function(){
   $("#strNum").prop('disabled', true)
  }
 })
+
+$('.reg-submit').click(function(){
+  var num = $('#olqNum').val();
+  num.toString();
+  console.log(num);
+  
+});
 /* If the user clicks anywhere outside the select box,
 then close all select boxes: */
   autocomplete(document.getElementById("olqNum"), olqNum);
