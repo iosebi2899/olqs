@@ -554,7 +554,7 @@ footer p{
     left: 50%;
     transform:translate(-50%,-50%);
 }
-@media(max-width:1220px){
+@media(max-width:1219px){
     .companies a img{
         height: 80px;
     }

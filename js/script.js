@@ -60,7 +60,7 @@ $('.submit').click(function() {
      }
  });
 //  autocomplete
-var olqNum = ["1093900191","1093162221","1098482276","1093900191","1093900191","1093900191"];
+var olqNum = ["31093900191","1093162221","1098482276","1093900191","1093900191","1093900191"];
 var strNum = ["1093900191","1093162221","1098482276","1093900191","1093900191","1093900191"];
 function autocomplete(inp, arr) {
     /*the autocomplete function takes two arguments,
@@ -78,11 +78,11 @@ function autocomplete(inp, arr) {
         a.setAttribute("id", this.id + "autocomplete-list");
         a.setAttribute("class", "autocomplete-items");
         /*append the DIV element as a child of the autocomplete container:*/
-        this.parentNode.appendChild(a);
         /*for each item in the array...*/
         for (i = 0; i < arr.length; i++) {
           /*check if the item starts with the same letters as the text field value:*/
           if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+            this.parentNode.appendChild(a);
             /*create a DIV element for each matching element:*/
             b = document.createElement("DIV");
             /*make the matching letters bold:*/
@@ -254,6 +254,16 @@ function submit(){
     $('.reg-submit').addClass('active-submit')
   }
 }
+$('#olqNum').on('keyup',function(){
+ if($('#olqNum').val()>1){
+   console.log('diax')
+  $("#strNum").prop('disabled', false)
+ }else{
+   console.log('ara')
+  $("#strNum").val('');
+  $("#strNum").prop('disabled', true)
+ }
+})
 /* If the user clicks anywhere outside the select box,
 then close all select boxes: */
   autocomplete(document.getElementById("olqNum"), olqNum);
