@@ -554,11 +554,19 @@ footer p{
     left: 50%;
     transform:translate(-50%,-50%);
 }
+@media(max-width:1220px){
+    .companies a img{
+        height: 80px;
+    }
+}
 @media (max-width:1024px){
     body{
-        overflow: hidden;
+        /* overflow: hidden; */
     }
     .responsive-error{
         display: block;
+    }
+    header,main,footer{
+        display: none;
     }
 }
