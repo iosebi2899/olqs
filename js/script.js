@@ -20,7 +20,7 @@ $('.submit').click(function() {
         $('.reg-input').removeClass('error-input');
         $('#name').addClass('error-input');
         $('.tiny').addClass('shown');
-    }else if(!$('#strNum').val()){
+    }else if(jQuery.inArray($('#strNum').val(), strNum)==-1){
         $('.reg-input').removeClass('error-input');
         $('#strNum').addClass('error-input');
         $('.tiny').addClass('shown');
