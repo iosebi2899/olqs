@@ -40,17 +40,8 @@ $('.submit').click(function() {
 
     }
  });
- function selected(){
-     if($('#tavikaci').is(':selected')||$('#mdivani').is(':selected')){
-         return true;
-     }
- }
- $('.reg-input').change(function(){
-     if($('#id').val()&&$('#olqNum').val()&&$('#name').val()&&$('#strNum').val()&&$('#surname').val()&&selected()){
-         $('.reg-submit').addClass('active-submit')
-     }
- })
- 
+ var isSelected = false;
+
  $('#auth-submit').click(function() {
      if(/@/.test($("#auth-email").val())==false){
         $('.auth-input').removeClass('error-input');
@@ -211,6 +202,8 @@ for (i = 0; i < l; i++) {
         }
         h.click();
         $('.select-selected').addClass('filled');
+        isSelected = true;
+        submit();
     });
     b.appendChild(c);
   }
@@ -247,6 +240,20 @@ function closeAllSelect(elmnt) {
   }
 }
 
+$('.reg-input').on('input propertychange', function(){
+  if($('#id').val()&&$('#olqNum').val()&&$('#name').val()&&$('#strNum').val()&&$('#surname').val()){
+    inputFilled = true;
+    console.log("diax")
+  }
+  if(inputFilled&&isSelected){
+    $('.reg-submit').addClass('active-submit')
+  }
+ })
+function submit(){
+  if(inputFilled&&isSelected){
+    $('.reg-submit').addClass('active-submit')
+  }
+}
 /* If the user clicks anywhere outside the select box,
 then close all select boxes: */
   autocomplete(document.getElementById("olqNum"), olqNum);
