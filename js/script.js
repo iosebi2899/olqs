@@ -11,26 +11,32 @@ $('.submit').click(function() {
     
     if(/^(?=.*\d).{11}$/.test($('#id').val())==false){
         $('#id').addClass('error-input');
+        $('.tiny').html('დაფიქსირდა შეცდომა, აუცილებელია ყველა ველის შევსება');
         $('.tiny').addClass('shown');
     }else if(jQuery.inArray($('#olqNum').val(), olqNum)==-1){
         $('.reg-input').removeClass('error-input');
         $('#olqNum').addClass('error-input');
+        $('.tiny').html('თქვენ მიერ მითითებული ოლქი არ არსებობს');
         $('.tiny').addClass('shown');
     }else if(!$('#name').val()){
         $('.reg-input').removeClass('error-input');
         $('#name').addClass('error-input');
+        $('.tiny').html('დაფიქსირდა შეცდომა, აუცილებელია ყველა ველის შევსება');
         $('.tiny').addClass('shown');
     }else if(jQuery.inArray($('#strNum').val(), strNum)==-1){
         $('.reg-input').removeClass('error-input');
         $('#strNum').addClass('error-input');
+        $('.tiny').html('თქვენ მიერ მითითებული უბანი არ არსებობს');
         $('.tiny').addClass('shown');
     }else if(!$('#surname').val()){
         $('.reg-input').removeClass('error-input');
         $('#surname').addClass('error-input');
+        $('.tiny').html('დაფიქსირდა შეცდომა, აუცილებელია ყველა ველის შევსება');
         $('.tiny').addClass('shown');
     }else if($('.disabled-value').is(':selected')){
         $('.reg-input').removeClass('error-input');
         $('#position').addClass('error-input');
+        $('.tiny').html('დაფიქსირდა შეცდომა, აუცილებელია ყველა ველის შევსება');
         $('.tiny').addClass('shown');
     }
     else{
@@ -243,19 +249,26 @@ function closeAllSelect(elmnt) {
 $('.reg-input').on('input propertychange', function(){
   if($('#id').val()&&$('#olqNum').val()&&$('#name').val()&&$('#strNum').val()&&$('#surname').val()){
     inputFilled = true;
-    console.log("diax")
+  }else{
+    inputFilled = false;
   }
   if(inputFilled&&isSelected){
     $('.reg-submit').addClass('active-submit')
+  }
+  else{
+    $('.reg-submit').removeClass('active-submit')
   }
  })
 function submit(){
   if(inputFilled&&isSelected){
     $('.reg-submit').addClass('active-submit')
   }
+  else{
+    $('.reg-submit').removeClass('active-submit')
+  }
 }
 $('#olqNum').on('keyup',function(){
- if($('#olqNum').val()>1){
+ if($('#olqNum').val()>=1){
    console.log('diax')
   $("#strNum").prop('disabled', false)
  }else{
