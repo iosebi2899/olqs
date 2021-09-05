@@ -58,3 +58,24 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'left';
+    src: url('./../fonts/Zaza.eot');
+    src: url('./../fonts/Zaza.woff2') format('woff2'),
+        url('./../fonts/Zaza.woff') format('woff'),
+        url('./../fonts/Zaza.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'right';
+    src: url('./../fonts/Calligraphy.eot');
+    src: url('./../fonts/Calligraphy.woff2') format('woff2'),
+        url('./../fonts/Calligraphy.woff') format('woff'),
+        url('./../fonts/Calligraphy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
