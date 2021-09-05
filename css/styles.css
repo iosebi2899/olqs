@@ -886,6 +886,64 @@ footer p{
 .ring-numbers .flex-div .grid-row-right p{
     font-size: 18px;
 }
+.tavikacebi{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.tavikacebi-item{
+    width: 50%;
+    display: flex;
+    margin-top: 30px;
+}
+.justify-content-end{
+    justify-content: flex-end;
+}
+.tavikacebi-item h4{
+    font-size: 16px;
+}
+.item-div{
+    display: flex;
+    position: relative;
+}
+.item-div div{
+    position: relative;
+}
+.item-div div p{
+    margin-left: 22px;
+    font-size: 13px;
+    font-family:'BPG 2017 DejaVu Sans regular',monospace;
+}
+
+.underline{
+    position: absolute !important;
+    width: 90%;
+    height: 2px;
+    background-color: #343B43;
+    bottom: -2px;
+    left: 19px;
+}
+.underline-second{
+    position: absolute !important;
+    width: 73%;
+    height: 2px;
+    background-color: #343B43;
+    bottom: -2px;
+    right: 0px;
+}
+.item-div div .last-child{
+    margin-left: 40px !important;
+}
+.rotated-line{
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    transform: rotate(-45deg);
+    background-color: #343B43;
+    left: 20px;
+    top: 10px;
+}
 @media (max-width:1351px){
     .flex-header-right .resize{
         font-size: 18px;

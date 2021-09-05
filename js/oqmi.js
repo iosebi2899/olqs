@@ -22,7 +22,6 @@ window.onload = function () {
 };
 $(".form-input").keyup(function () {
   if (this.value.length == this.maxLength) {
-    console.log('GG')
     $(this).next('.form-input').focus();
   }
 });
