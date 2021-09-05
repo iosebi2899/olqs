@@ -288,4 +288,3 @@ $('.reg-submit').click(function(){
 then close all select boxes: */
   autocomplete(document.getElementById("olqNum"), olqNum);
   autocomplete(document.getElementById("strNum"), strNum);
-  document.addEventListener("click", closeAllSelect);
