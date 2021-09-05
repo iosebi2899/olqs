@@ -743,6 +743,7 @@ footer p{
     justify-content: space-between;
     background-color: #FBD5FC;
 }
+
 .grid-row-left, .grid-row-right{
     display: flex;
     align-items: center;
@@ -773,6 +774,7 @@ footer p{
 }
 .grid-row-right{
     width: 15%;
+    justify-content: flex-end;
 }
 .top-grid .vertical{
     flex-direction: column;
@@ -823,6 +825,66 @@ footer p{
 .label-text{
     padding: 0 !important;
     margin-left: 10px !important;
+}
+.bottom-grid{
+    position: relative;
+}
+.bottom-grid .grid-item{
+    position: relative;
+    padding-left: 40px;
+    border-right: 10px solid #FBD5FC;
+    margin-right: -11px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+.last-child{
+    bottom: 69px !important;
+}
+.padding-bottom{
+    padding-bottom: 84px !important;
+}
+.absolute-left{
+    position: absolute;
+    left: -113px;
+    background-color: #F8BFDF;
+    border: 1px solid #343B43;
+    border-radius: 3px;
+    transform: rotate(-90deg);
+    top: 43.6%;
+    padding: 8px 30px;
+    z-index: 213;
+    font-size: 13px;
+    font-family:'BPG 2017 DejaVu Sans regular',monospace;
+}
+.absolute-line{
+    position: absolute;
+    bottom: 0px;
+    width: calc(100% - 50px);
+    height: 1px;
+    background-color: #343B43;
+}
+.bottom-grid .grid-item .grid-row-left .grid-num{
+    font-size: 16px;
+    border-style: dotted;
+    padding: 5px;
+}
+.ring-numbers{
+    margin-top:22px ;
+}
+.ring-numbers .flex-div{
+    width: 83%;
+}
+.ring-numbers,.flex-div{
+    display: flex;
+    justify-content: space-between;
+}
+.ring-numbers .regular{
+    font-size:13px;
+    line-height: 15px;
+    width: 15%;
+}
+.ring-numbers .flex-div .grid-row-right p{
+    font-size: 18px;
 }
 @media (max-width:1351px){
     .flex-header-right .resize{
