@@ -35,7 +35,8 @@
     font-family: 'BPG 2017 DejaVu Sans bold',monospace;
     color: #343B43;
     text-align: center;
-    padding: 20vh 0;
+    padding: 10% 0;
+    padding-bottom: calc(10% + 128px);
     background-color: #F8FAFB;
 }
 .gl-h{
