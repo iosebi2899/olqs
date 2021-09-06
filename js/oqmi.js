@@ -1,7 +1,7 @@
 function startTimer(duration, display) {
     var timer = duration, minutes, seconds;
     setInterval(function () {
-        if(minutes==19&&seconds==59){
+        if(minutes==5&&seconds==00){
             $("#exampleModal").modal()
         }
         minutes = parseInt(timer / 60, 10)

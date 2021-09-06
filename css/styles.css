@@ -620,7 +620,8 @@ footer p{
     font-family: 'BPG 2017 DejaVu Sans bold',monospace;
     padding: 20px 15px;
     color: white;
-    display: inline-block;
+    display: flex;
+    align-items: center;
     background-color: white;
     border: 1px solid black;
     border-radius: 4px;
@@ -632,7 +633,12 @@ footer p{
     border: 0;
     font-size: 16px;
     cursor: pointer;
+    outline: 0;
 }
+.flex-header-right button:focus{
+    outline: none;
+}
+
 #time{
     font-family: 'BPG 2017 DejaVu Sans bold',monospace;
 }
@@ -762,12 +768,14 @@ footer p{
     font-size: 16px;
     font-family: 'BPG 2017 DejaVu Sans regular',monospace;
     color: #343B43;
+    margin-bottom: 0;
 }
 .grid-label{
     font-size: 13px;
     margin-left: 10px;
     font-family: 'BPG 2017 DejaVu Sans regular',monospace;
     color: #343B43;
+    margin-bottom: 0;
 }
 .no-left-margin{
     margin-left: 0 !important;
