@@ -870,6 +870,18 @@ footer p{
     font-size: 13px;
     font-family:'BPG 2017 DejaVu Sans regular',monospace;
 }
+.absolute-bottom{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%,-50%);
+    font-family:'BPG 2017 DejaVu Sans Caps',monospace;
+    font-size: 21px;
+    color: #9ACFDD;
+}
+.variant1{
+    color: #E8A7C7;
+}
 .absolute-line{
     position: absolute;
     bottom: 0px;
