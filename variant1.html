@@ -36,7 +36,7 @@
             <p>ქვემოთ მოცემული მონაცემების გათვალისწინებით, შეავსეთ სავარჯიშო ოქმების შესაბამისი გრაფები. დარჩენილ ცარიელ გრაფებში შეტანილ უნდა იქნეს სიმბოლო „X“.</p>
         </div>
         <div class="flex-header-right">
-            <div class="resize"><button><i class="fas fa-minus"></i></button> AA <button><i class="fas fa-plus"></i></button></div>
+            <div class="resize"><button id="minus"><i class="fas fa-minus"></i></button> AA <button id="plus"><i class="fas fa-plus"></i></button></div>
             <div class="time-left">დარჩენილი დრო: <span id="time">20:00</span></div>
         </div>
     </header>
@@ -90,10 +90,10 @@
                     <div class="grid-row-left">
                         <p class=grid-num>3</p><p class="grid-header">სპეციალურ სიაში</p><p class="grid-label">ამომრჩეველთა რაოდენობა</p></div>
                     <div class="grid-row-right">
-                        <input id="a1" class="but-bold form-input" maxlength="1">
-                        <input id="a2" class="but-bold form-input" maxlength="1">
-                        <input id="a3" class="but-bold form-input" maxlength="1">
-                        <input id="a4" class="but-bold form-input" maxlength="1">
+                        <input onkeypress="return isNumberKey(event)" id="a1" class="but-bold form-input" maxlength="1">
+                        <input onkeypress="return isNumberKey(event)" id="a2" class="but-bold form-input" maxlength="1">
+                        <input onkeypress="return isNumberKey(event)" id="a3" class="but-bold form-input" maxlength="1">
+                        <input onkeypress="return isNumberKey(event)" id="a4" class="but-bold form-input" maxlength="1">
                     </div>
                 </div>
                 <div class="grid-item vertical">
@@ -101,25 +101,25 @@
                         <p class=grid-num>4</p><p class="grid-label no-left-margin">არჩევნებში მონაწილე ამომრჩეველთა ხელმოწერების რაოდენობა ყველა სახის ამომრჩეველთა სიაში</p></div>
                     <div class="grid-row-right wider">
                         <label class="left-label regular" for="a"><span class="wider-identifier regular">ა</span><p class="label-text">12:00 საათისთვის</p></label>
-                        <input id="b1" class="but-bold form-input" maxlength="1">
-                        <input id="b2" class="but-bold form-input" maxlength="1">
-                        <input id="b3" class="but-bold form-input" maxlength="1">
-                        <input id="b4" class="but-bold form-input" maxlength="1">
+                        <input onkeypress="return isNumberKey(event)" id="b1" class="but-bold form-input" maxlength="1">
+                        <input onkeypress="return isNumberKey(event)" id="b2" class="but-bold form-input" maxlength="1">
+                        <input onkeypress="return isNumberKey(event)" id="b3" class="but-bold form-input" maxlength="1">
+                        <input onkeypress="return isNumberKey(event)" id="b4" class="but-bold form-input" maxlength="1">
                         <label class="right-label regular" for="b"><span class="wider-identifier regular">ბ</span><p class="label-text">17:00 საათისთვის</p></label>
-                        <input id="c1" class="but-bold form-input" maxlength="1">
-                        <input id="c2" class="but-bold form-input" maxlength="1">
-                        <input id="c3" class="but-bold form-input" maxlength="1">
-                        <input id="c4" class="but-bold form-input" maxlength="1">
+                        <input onkeypress="return isNumberKey(event)" id="c1" class="but-bold form-input" maxlength="1">
+                        <input onkeypress="return isNumberKey(event)" id="c2" class="but-bold form-input" maxlength="1">
+                        <input onkeypress="return isNumberKey(event)" id="c3" class="but-bold form-input" maxlength="1">
+                        <input onkeypress="return isNumberKey(event)" id="c4" class="but-bold form-input" maxlength="1">
                     </div>
                 </div>
                 <div class="grid-item">
                     <div class="grid-row-left">
                         <p class=grid-num>5</p><p class="grid-header">არჩევნებში მონაწილე ამომრჩეველთა საერთო რაოდენობა<br><span class="grid-label lower">(ხელმოწერების ჯამი ყველა სახის სიაში)</span></p></div>
                     <div class="grid-row-right">
-                        <input id="d1" class="but-bold form-input" maxlength="1">
-                        <input id="d2" class="but-bold form-input" maxlength="1">
-                        <input id="d3" class="but-bold form-input" maxlength="1">
-                        <input id="d4" class="but-bold form-input" maxlength="1">
+                        <input onkeypress="return isNumberKey(event)" id="d1" class="but-bold form-input" maxlength="1">
+                        <input onkeypress="return isNumberKey(event)" id="d2" class="but-bold form-input" maxlength="1">
+                        <input onkeypress="return isNumberKey(event)" id="d3" class="but-bold form-input" maxlength="1">
+                        <input onkeypress="return isNumberKey(event)" id="d4" class="but-bold form-input" maxlength="1">
                     </div>
                 </div>
                 <div class="bottom-grid">
@@ -128,10 +128,10 @@
                         <div class="grid-row-left">
                             <p class=grid-num>111</p><p class="grid-header">N111 მაჟორიტარი კანდიდატი</p></div>
                         <div class="grid-row-right">
-                            <input id="e1" class="but-bold form-input" maxlength="1">
-                            <input id="e2" class="but-bold form-input" maxlength="1">
-                            <input id="e3" class="but-bold form-input" maxlength="1">
-                            <input id="e4" class="but-bold form-input" maxlength="1">
+                            <input onkeypress="return isNumberKey(event)" id="e1" class="but-bold form-input" maxlength="1">
+                            <input onkeypress="return isNumberKey(event)" id="e2" class="but-bold form-input" maxlength="1">
+                            <input onkeypress="return isNumberKey(event)" id="e3" class="but-bold form-input" maxlength="1">
+                            <input onkeypress="return isNumberKey(event)" id="e4" class="but-bold form-input" maxlength="1">
                         </div>
                         <div class="absolute-line"></div>
                     </div>
@@ -139,10 +139,10 @@
                         <div class="grid-row-left">
                             <p class=grid-num>112</p><p class="grid-header">N112 მაჟორიტარი კანდიდატი</p></div>
                         <div class="grid-row-right">
-                            <input id="f1" class="but-bold form-input" maxlength="1">
-                            <input id="f2" class="but-bold form-input" maxlength="1">
-                            <input id="f3" class="but-bold form-input" maxlength="1">
-                            <input id="f4" class="but-bold form-input" maxlength="1">
+                            <input onkeypress="return isNumberKey(event)" id="f1" class="but-bold form-input" maxlength="1">
+                            <input onkeypress="return isNumberKey(event)" id="f2" class="but-bold form-input" maxlength="1">
+                            <input onkeypress="return isNumberKey(event)" id="f3" class="but-bold form-input" maxlength="1">
+                            <input onkeypress="return isNumberKey(event)" id="f4" class="but-bold form-input" maxlength="1">
                         </div>
                         <div class="absolute-line"></div>
                     </div>
@@ -150,10 +150,10 @@
                         <div class="grid-row-left">
                             <p class=grid-num>113</p><p class="grid-header">N113 მაჟორიტარი კანდიდატი</p></div>
                         <div class="grid-row-right">
-                            <input id="g1" class="but-bold form-input" maxlength="1">
-                            <input id="g2" class="but-bold form-input" maxlength="1">
-                            <input id="g3" class="but-bold form-input" maxlength="1">
-                            <input id="g4" class="but-bold form-input" maxlength="1">
+                            <input onkeypress="return isNumberKey(event)" id="g1" class="but-bold form-input" maxlength="1">
+                            <input onkeypress="return isNumberKey(event)" id="g2" class="but-bold form-input" maxlength="1">
+                            <input onkeypress="return isNumberKey(event)" id="g3" class="but-bold form-input" maxlength="1">
+                            <input onkeypress="return isNumberKey(event)" id="g4" class="but-bold form-input" maxlength="1">
                         </div>
                         <div class="absolute-line"></div>
                     </div>
@@ -161,10 +161,10 @@
                         <div class="grid-row-left">
                             <p class=grid-num>114</p><p class="grid-header">N114 მაჟორიტარი კანდიდატი</p></div>
                         <div class="grid-row-right">
-                            <input id="h1" class="but-bold form-input" maxlength="1">
-                            <input id="h2" class="but-bold form-input" maxlength="1">
-                            <input id="h3" class="but-bold form-input" maxlength="1">
-                            <input id="h4" class="but-bold form-input" maxlength="1">
+                            <input onkeypress="return isNumberKey(event)" id="h1" class="but-bold form-input" maxlength="1">
+                            <input onkeypress="return isNumberKey(event)" id="h2" class="but-bold form-input" maxlength="1">
+                            <input onkeypress="return isNumberKey(event)" id="h3" class="but-bold form-input" maxlength="1">
+                            <input onkeypress="return isNumberKey(event)" id="h4" class="but-bold form-input" maxlength="1">
                         </div>
                         <div class="absolute-line last-child"></div>
                     </div>
@@ -174,10 +174,10 @@
                     <div class="grid-row-left">
                         <p class=grid-num>6</p><p class="grid-header">ბათილად მიჩნეული საარჩევნო ბიულეტენების რაოდენობა<br><span class="grid-label lower">(სხვა უბნისათვის განკუთვნილი ბათილი საარჩევნო ბიულეტენების რაოდენობა არ ემატება)</span></p></div>
                     <div class="grid-row-right">
-                        <input id="e1" class="but-bold form-input" maxlength="1">
-                        <input id="e2" class="but-bold form-input" maxlength="1">
-                        <input id="e3" class="but-bold form-input" maxlength="1">
-                        <input id="e4" class="but-bold form-input" maxlength="1">
+                        <input onkeypress="return isNumberKey(event)" id="e1" class="but-bold form-input" maxlength="1">
+                        <input onkeypress="return isNumberKey(event)" id="e2" class="but-bold form-input" maxlength="1">
+                        <input onkeypress="return isNumberKey(event)" id="e3" class="but-bold form-input" maxlength="1">
+                        <input onkeypress="return isNumberKey(event)" id="e4" class="but-bold form-input" maxlength="1">
                     </div>
                 </div>
             </div>

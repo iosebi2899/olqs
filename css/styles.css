@@ -1216,3 +1216,6 @@ footer p{
         padding-right: 80px;
     }
 }
+.form-input{
+    text-transform: uppercase;
+}
