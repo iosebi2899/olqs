@@ -15,7 +15,7 @@
     height: 130px;
 }
 
-.main-header #a{
+#a{
     font-size: 16px;
     line-height: 19px;
     font-family: 'BPG 2017 DejaVu Sans bold',monospace;
@@ -28,6 +28,18 @@
     top: 35px;
     color: white;
     transition: 0.3s;
+}
+.gl{
+    width: 100%;
+    font-size: 34px;
+    font-family: 'BPG 2017 DejaVu Sans bold',monospace;
+    color: #343B43;
+    text-align: center;
+    padding: 20vh 0;
+    background-color: #F8FAFB;
+}
+.gl-h{
+    background-color: #F8FAFB;
 }
 .main-header #a:hover{
     background-color: #656565;
