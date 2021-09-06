@@ -4,13 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <title>ოქმი</title>
+    <title>ოქმი-ვარიანტი 2</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/1bd888af31.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body regular">
+            <p class="body-header">ᲓᲠᲝ ᲘᲬᲣᲠᲔᲑᲐ!</p><br>
+          დარჩენილია 5 წუთი, იჩქარეთ
+        </div>
+      </div>
+    </div>
+  </div>
     <div class="responsive-error"><p>საიტის გამოყენება შესაძლებელია მხოლოდ ლეპტოპიდან ან პერსონალური კომპიუტერიდან</p></div>
     <header class="oqmi-header">
         <div class="flex-header-left">
@@ -23,7 +41,7 @@
         </div>
     </header>
     <main class="oqmi-main">
-        <form class="oqmi">
+        <form class="oqmi variant2-bg">
             <div class="oqmi-main-label">
                 <p>მუნიციპალიტეტის ორგანოთა 2021 წლის 2 ოქტომბრის არჩევნები<br>საუბნო საარჩევნო კომისიის მაჟორიტარული საარჩევნო სისტემით<br>კენჭისყრის შედეგების შემაჯამებელი ოქმი</p>
                 <div class="identifier">
@@ -42,15 +60,15 @@
                     </div>
                 </div>
             </div>
-            <div class="doc-header">
+            <div class="doc-header variant2-bg">
                 <div class="olqNumber"><span class="but-bold" id="olqNumber">N112</span><p>საარჩევნო ოლქი</p></div>
                 <div class="strNumber"><span class="but-bold" id="strNumber">№ 03</span><p>საარჩევნო უბანი</p></div>
                 <div class="text-align-right"><span class="doc-checkbox"></span></p>ხელახალი კენჭისყრა</div>
             </div>
             <div class="top-grid">
-                <div class="grid-item">
+                <div class="grid-item variant2-bg">
                     <div class="grid-row-left">
-                        <p class=grid-num>1</p><p class="grid-header">ერთიან სიაში</p><p class="grid-label">ამომრჩეველთა რაოდენობა</p></div>
+                        <p class="grid-num variant2-bg">1</p><p class="grid-header">ერთიან სიაში</p><p class="grid-label">ამომრჩეველთა რაოდენობა</p></div>
                     <div class="grid-row-right">
                         <p class="but-bold">X</p>
                         <p class="but-bold">8</p>
@@ -58,9 +76,9 @@
                         <p class="but-bold">5</p>
                     </div>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item variant2-bg">
                     <div class="grid-row-left">
-                        <p class=grid-num>2</p><p class="grid-header">მიღებული</p><p class="grid-label">საარჩევნო ბიულეტენების რაოდენობა</p></div>
+                        <p class="grid-num variant2-bg">2</p><p class="grid-header">მიღებული</p><p class="grid-label">საარჩევნო ბიულეტენების რაოდენობა</p></div>
                     <div class="grid-row-right">
                         <p class="but-bold">X</p>
                         <p class="but-bold">8</p>
@@ -68,9 +86,9 @@
                         <p class="but-bold">5</p>
                     </div>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item variant2-bg">
                     <div class="grid-row-left">
-                        <p class=grid-num>3</p><p class="grid-header">სპეციალურ სიაში</p><p class="grid-label">ამომრჩეველთა რაოდენობა</p></div>
+                        <p class="grid-num variant2-bg">3</p><p class="grid-header">სპეციალურ სიაში</p><p class="grid-label">ამომრჩეველთა რაოდენობა</p></div>
                     <div class="grid-row-right">
                         <input id="a1" class="but-bold form-input" maxlength="1">
                         <input id="a2" class="but-bold form-input" maxlength="1">
@@ -78,9 +96,9 @@
                         <input id="a4" class="but-bold form-input" maxlength="1">
                     </div>
                 </div>
-                <div class="grid-item vertical">
+                <div class="grid-item variant2-bg vertical">
                     <div class="grid-row-left">
-                        <p class=grid-num>4</p><p class="grid-label no-left-margin">არჩევნებში მონაწილე ამომრჩეველთა ხელმოწერების რაოდენობა ყველა სახის ამომრჩეველთა სიაში</p></div>
+                        <p class="grid-num variant2-bg">4</p><p class="grid-label no-left-margin">არჩევნებში მონაწილე ამომრჩეველთა ხელმოწერების რაოდენობა ყველა სახის ამომრჩეველთა სიაში</p></div>
                     <div class="grid-row-right wider">
                         <label class="left-label regular" for="a"><span class="wider-identifier regular">ა</span><p class="label-text">12:00 საათისთვის</p></label>
                         <input id="b1" class="but-bold form-input" maxlength="1">
@@ -94,9 +112,9 @@
                         <input id="c4" class="but-bold form-input" maxlength="1">
                     </div>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item variant2-bg">
                     <div class="grid-row-left">
-                        <p class=grid-num>5</p><p class="grid-header">არჩევნებში მონაწილე ამომრჩეველთა საერთო რაოდენობა<br><span class="grid-label lower">(ხელმოწერების ჯამი ყველა სახის სიაში)</span></p></div>
+                        <p class="grid-num variant2-bg">5</p><p class="grid-header">არჩევნებში მონაწილე ამომრჩეველთა საერთო რაოდენობა<br><span class="grid-label lower">(ხელმოწერების ჯამი ყველა სახის სიაში)</span></p></div>
                     <div class="grid-row-right">
                         <input id="d1" class="but-bold form-input" maxlength="1">
                         <input id="d2" class="but-bold form-input" maxlength="1">
@@ -105,10 +123,10 @@
                     </div>
                 </div>
                 <div class="bottom-grid">
-                    <div class="absolute-left">მიღებულ ხმათა რაოდენობა</div>
-                    <div class="grid-item">
+                    <div class="absolute-left variant2-dbg">მიღებულ ხმათა რაოდენობა</div>
+                    <div class="grid-item variant2-bg">
                         <div class="grid-row-left">
-                            <p class=grid-num>111</p><p class="grid-header">N111 მაჟორიტარი კანდიდატი</p></div>
+                            <p class="grid-num variant2-bg">111</p><p class="grid-header">N111 მაჟორიტარი კანდიდატი</p></div>
                         <div class="grid-row-right">
                             <input id="e1" class="but-bold form-input" maxlength="1">
                             <input id="e2" class="but-bold form-input" maxlength="1">
@@ -117,9 +135,9 @@
                         </div>
                         <div class="absolute-line"></div>
                     </div>
-                    <div class="grid-item">
+                    <div class="grid-item variant2-bg">
                         <div class="grid-row-left">
-                            <p class=grid-num>112</p><p class="grid-header">N112 მაჟორიტარი კანდიდატი</p></div>
+                            <p class="grid-num variant2-bg">112</p><p class="grid-header">N112 მაჟორიტარი კანდიდატი</p></div>
                         <div class="grid-row-right">
                             <input id="f1" class="but-bold form-input" maxlength="1">
                             <input id="f2" class="but-bold form-input" maxlength="1">
@@ -128,9 +146,9 @@
                         </div>
                         <div class="absolute-line"></div>
                     </div>
-                    <div class="grid-item">
+                    <div class="grid-item variant2-bg">
                         <div class="grid-row-left">
-                            <p class=grid-num>113</p><p class="grid-header">N113 მაჟორიტარი კანდიდატი</p></div>
+                            <p class="grid-num variant2-bg">113</p><p class="grid-header">N113 მაჟორიტარი კანდიდატი</p></div>
                         <div class="grid-row-right">
                             <input id="g1" class="but-bold form-input" maxlength="1">
                             <input id="g2" class="but-bold form-input" maxlength="1">
@@ -139,9 +157,9 @@
                         </div>
                         <div class="absolute-line"></div>
                     </div>
-                    <div class="grid-item padding-bottom">
+                    <div class="grid-item variant2-bg padding-bottom">
                         <div class="grid-row-left">
-                            <p class=grid-num>114</p><p class="grid-header">N114 მაჟორიტარი კანდიდატი</p></div>
+                            <p class="grid-num variant2-bg">114</p><p class="grid-header">N114 მაჟორიტარი კანდიდატი</p></div>
                         <div class="grid-row-right">
                             <input id="h1" class="but-bold form-input" maxlength="1">
                             <input id="h2" class="but-bold form-input" maxlength="1">
@@ -151,9 +169,9 @@
                         <div class="absolute-line last-child"></div>
                     </div>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item variant2-bg">
                     <div class="grid-row-left">
-                        <p class=grid-num>6</p><p class="grid-header">ბათილად მიჩნეული საარჩევნო ბიულეტენების რაოდენობა<br><span class="grid-label lower">(სხვა უბნისათვის განკუთვნილი ბათილი საარჩევნო ბიულეტენების რაოდენობა არ ემატება)</span></p></div>
+                        <p class="grid-num variant2-bg">6</p><p class="grid-header">ბათილად მიჩნეული საარჩევნო ბიულეტენების რაოდენობა<br><span class="grid-label lower">(სხვა უბნისათვის განკუთვნილი ბათილი საარჩევნო ბიულეტენების რაოდენობა არ ემატება)</span></p></div>
                     <div class="grid-row-right">
                         <input id="e1" class="but-bold form-input" maxlength="1">
                         <input id="e2" class="but-bold form-input" maxlength="1">
@@ -201,25 +219,25 @@
                 <div class="tavikacebi-item">
                     <h4 class="regular">თავმჯდომარე:</h4>
                     <div class="item-div">
-                        <div class="first-child"><p>ნინო ნინოშვილი</p><div class="underline"></div></div>
+                        <div class="first-child"><p>nino ninoSvili</p><div class="underline"></div></div>
                         <div class="rotated-line"></div>
-                        <div><p class="last-child">ნ. ნინოშვილი</p><div class="underline-second"></div></div>
+                        <div><p class="last-child">n. ninoSvili</p><div class="underline-second"></div></div>
                     </div>
                 </div>
                 <div class="tavikacebi-item justify-content-end">
                     <h4 class="regular">თავმჯდომარის მოადგილე:</h4>
                     <div class="item-div">
-                        <div class="first-child"><p>მარიამ მარიამიძე</p><div class="underline"></div></div>
+                        <div class="first-child"><p>mariam mariamiZe</p><div class="underline"></div></div>
                         <div class="rotated-line"></div>
-                        <div><p class="last-child">მ მარიამიძე</p><div class="underline-second"></div></div>
+                        <div><p class="last-child">m. mariamiZe</p><div class="underline-second"></div></div>
                     </div>
                 </div>
                 <div class="tavikacebi-item">
                     <h4 class="regular">მდივანი:</h4>
                     <div class="item-div">
-                        <div class="first-child"><p>ლალი ლალიშვილი</p><div class="underline"></div></div>
+                        <div class="first-child"><p>lali laliSvili</p><div class="underline"></div></div>
                         <div class="rotated-line"></div>
-                        <div><p class="last-child">ლ. ლალიშვილი</p><div class="underline-second"></div></div>
+                        <div><p class="last-child">l. laliSvili</p><div class="underline-second"></div></div>
                     </div>
                 </div>
             </div>
@@ -227,78 +245,78 @@
                 <h4 class="regular">წევრები</h4>
                 <div class="component">
                     <div class="item-div">
-                        <div class="first-child"><p>ნინო ნინიძე</p><div class="underline"></div></div>
+                        <div class="first-child"><p>nino niniZe</p><div class="underline"></div></div>
                         <div class="rotated-line"></div>
-                        <div><p class="last-child">ნ.ნინიძე</p><div class="underline-second"></div></div>
+                        <div><p class="last-child">n. niniZe</p><div class="underline-second"></div></div>
                     </div>
                     <div class="item-div">
-                        <div class="first-child"><p>რომან რომანაძე</p><div class="underline"></div></div>
+                        <div class="first-child"><p>roman romanaZe</p><div class="underline"></div></div>
                         <div class="rotated-line"></div>
-                        <div><p class="last-child">რ. რომანაძე</p><div class="underline-second"></div></div>
+                        <div><p class="last-child">r. romanaZe</p><div class="underline-second"></div></div>
                     </div>
                     <div class="item-div">
-                        <div class="first-child"><p>კახა კახიძე</p><div class="underline"></div></div>
+                        <div class="first-child"><p>kaxa kaxiZe</p><div class="underline"></div></div>
                         <div class="rotated-line"></div>
-                        <div><p class="last-child">კ. კახიძე</p><div class="underline-second"></div></div>
+                        <div><p class="last-child">k. kaxize</p><div class="underline-second"></div></div>
                     </div>
                     <div class="item-div">
-                        <div class="first-child"><p>დათო ასანიძე</p><div class="underline"></div></div>
+                        <div class="first-child"><p>dato asaiZe</p><div class="underline"></div></div>
                         <div class="rotated-line"></div>
-                        <div><p class="last-child">დ. ასანიძე</p><div class="underline-second"></div></div>
+                        <div><p class="last-child">d. asaiZe</p><div class="underline-second"></div></div>
                     </div>
                     <div class="item-div">
-                        <div class="first-child"><p>სოფო ალავიძე</p><div class="underline"></div></div>
+                        <div class="first-child"><p>sofo alaviZe</p><div class="underline"></div></div>
                         <div class="rotated-line"></div>
-                        <div><p class="last-child">ს. ალავიძე</p><div class="underline-second"></div></div>
-                    </div>
-                </div>
-                <div class="component">
-                    <div class="item-div">
-                        <div class="first-child"><p>დავით დავითაძე</p><div class="underline"></div></div>
-                        <div class="rotated-line"></div>
-                        <div><p class="last-child">დ. დავითაძე</p><div class="underline-second"></div></div>
-                    </div>
-                    <div class="item-div">
-                        <div class="first-child"><p>კახა კახიძე</p><div class="underline"></div></div>
-                        <div class="rotated-line"></div>
-                        <div><p class="last-child">კ. კახიძე</p><div class="underline-second"></div></div>
-                    </div>
-                    <div class="item-div">
-                        <div class="first-child"><p>ადა არაშიძე</p><div class="underline"></div></div>
-                        <div class="rotated-line"></div>
-                        <div><p class="last-child">ა. არაშიძე</p><div class="underline-second"></div></div>
-                    </div>
-                    <div class="item-div">
-                        <div class="first-child"><p>ია იაშვილი</p><div class="underline"></div></div>
-                        <div class="rotated-line"></div>
-                        <div><p class="last-child">ი. იაშვილი</p><div class="underline-second"></div></div>
-                    </div>
-                    <div class="item-div">
-                        <div class="first-child"><p>ციური გონაშვილი</p><div class="underline"></div></div>
-                        <div class="rotated-line"></div>
-                        <div><p class="last-child">ც. გონაშვილი</p><div class="underline-second"></div></div>
+                        <div><p class="last-child">s. alaviZe</p><div class="underline-second"></div></div>
                     </div>
                 </div>
                 <div class="component">
                     <div class="item-div">
-                        <div class="first-child"><p>რამაზ რამაზაძე</p><div class="underline"></div></div>
+                        <div class="first-child"><p>davit davitaZe</p><div class="underline"></div></div>
                         <div class="rotated-line"></div>
-                        <div><p class="last-child">რ. რამაზაძე</p><div class="underline-second"></div></div>
+                        <div><p class="last-child">d. davitaZe</p><div class="underline-second"></div></div>
                     </div>
                     <div class="item-div">
-                        <div class="first-child"><p>სალომე სუთიძე</p><div class="underline"></div></div>
+                        <div class="first-child"><p>kaxa kaxiZe</p><div class="underline"></div></div>
                         <div class="rotated-line"></div>
-                        <div><p class="last-child">ს. სუთიძე</p><div class="underline-second"></div></div>
+                        <div><p class="last-child">k. kaxiZe</p><div class="underline-second"></div></div>
                     </div>
                     <div class="item-div">
-                        <div class="first-child"><p>მიხეილ დოლიძე</p><div class="underline"></div></div>
+                        <div class="first-child"><p>ada araSiZe</p><div class="underline"></div></div>
                         <div class="rotated-line"></div>
-                        <div><p class="last-child">მ. დოლიძე</p><div class="underline-second"></div></div>
+                        <div><p class="last-child">a. araSiZe</p><div class="underline-second"></div></div>
                     </div>
                     <div class="item-div">
-                        <div class="first-child"><p>ლოლა ლოლაძე</p><div class="underline"></div></div>
+                        <div class="first-child"><p>ia iaSvili</p><div class="underline"></div></div>
                         <div class="rotated-line"></div>
-                        <div><p class="last-child">ლ. ლოლაძე</p><div class="underline-second"></div></div>
+                        <div><p class="last-child">i. iaSvili</p><div class="underline-second"></div></div>
+                    </div>
+                    <div class="item-div">
+                        <div class="first-child"><p>ciuri gonaSvili</p><div class="underline"></div></div>
+                        <div class="rotated-line"></div>
+                        <div><p class="last-child">c. gonaSvili</p><div class="underline-second"></div></div>
+                    </div>
+                </div>
+                <div class="component">
+                    <div class="item-div">
+                        <div class="first-child"><p>ramaz ramazaZe</p><div class="underline"></div></div>
+                        <div class="rotated-line"></div>
+                        <div><p class="last-child">r. ramazaZe</p><div class="underline-second"></div></div>
+                    </div>
+                    <div class="item-div">
+                        <div class="first-child"><p>salome sutiZe</p><div class="underline"></div></div>
+                        <div class="rotated-line"></div>
+                        <div><p class="last-child">s. sutiZe</p><div class="underline-second"></div></div>
+                    </div>
+                    <div class="item-div">
+                        <div class="first-child"><p>mixeil doliZe</p><div class="underline"></div></div>
+                        <div class="rotated-line"></div>
+                        <div><p class="last-child">m. doliZe</p><div class="underline-second"></div></div>
+                    </div>
+                    <div class="item-div">
+                        <div class="first-child"><p>lola lolaZe</p><div class="underline"></div></div>
+                        <div class="rotated-line"></div>
+                        <div><p class="last-child">l. lolaZe</p><div class="underline-second"></div></div>
                     </div>
                 </div>
             </div>
@@ -309,11 +327,13 @@
                 <div>
                     <p>დრო: <u>23</u>საათი <u>55</u>წუთი,</p>
                 </div>
-                <div>
+                <div class="relative-div">
                     <p>კომისიის ბეჭდის ნომერი <span class="ring-code">11207</span></p>
+                    <img src="img/bechedi.svg" alt="bechedi">
+                    <p class="absolute-item">ბ. ა.</p>
                 </div>
             </div>
-            <div class="last-grid">
+            <div class="last-grid variant2">
                 <div class="element4"><p>№</p></div>
                 <div class="element1">ოქმის მონაცემების გრაფა, რომელსაც არ<br> ეთანხმება კომისიის წევრი</div>
                 <div class="element2">კომისიის წევრის<br> სახელი და გვარი</div>
@@ -322,11 +342,31 @@
                 <div class="empty-line2"></div>
                 <div class="empty-line3"></div>
                 <div class="empty-line4"></div>
+                <p class="absolute-item regular variant2-color">განსხვავებული აზრი</p>
             </div>
             <input type="submit" class="oqmi-submit" value="დადასტურება">
         </form>
         <div class="bullets">
-
+            <h2>I ᲕᲐᲠᲘᲐᲜᲢᲘ</h2>
+            <hr>
+            <ul>
+                <li>სპეციალურ სიაში ამომრჩეველთა რაოდენობა: <span>12</span></li>
+                <li>არჩევნებში მონაწილე ამომრჩეველთა ხელმოწერების რაოდენობა ყველა სახის ამომრჩეველთა სიებში 12 საათზე: <span>96</span> და 17 საათზე: <span>637</span></li>
+                <li>ერთიან სიაში ამომრჩეველთა ხელმოწერების რაოდენობა: <span>721</span></li>
+                <li>სპეციალურ სიაში ამომრჩეველთა ხელმოწერების რაოდენობა: <span>11</span></li>
+                <li>გადასატანი საარჩევნო ყუთის სიაში ამომრჩეველთა ხელმოწერების რაოდენობა: <span>24</span></li>
+                <li>რეგისტრატორების ახსნა-განმარტებების მიხედვით გამორჩენილი ხელმოწერების რაოდენობა: <span>3</span></li>
+                <li>ბათილად მიჩნეული <span>მაჟორიტარული</span> საარჩევნო ბიულეტენების რაოდენობა: <span>17</span></li>
+                <li class="more-top-margin">საარჩევნო სუბიექტებისთვის მიცემულ ხმათა რაოდენობა:<br><br>N111 მაჟორიტარი კანდიდატი: <span>180</span></li>
+                <li>N112 მაჟორიტარი კანდიდატი: <span>205</span></li>
+                <li>N113 მაჟორიტარი კანდიდატი: <span>300</span></li>
+                <li>N114 მაჟორიტარი კანდიდატი: <span>53</span></li>
+                <li class="more-top-margin">ბათილად მიჩნეული <span>პროპორციული</span> საარჩევნო ბიულეტენების რაოდენობა: <span>9</span></li>
+                <li>N111 პარტია: <span>80</span></li>
+                <li>N112 პარტია: <span>305</span></li>
+                <li>N113 პარტია: <span>204</span></li>
+                <li>N114 პარტია: <span>161</span></li>
+            </ul>
         </div>
     </main>
     <div class="submit-div">
@@ -334,7 +374,9 @@
     <footer class="oqmi-footer">
         <p>© 2021 ᲔᲚᲔᲥᲢᲠᲝᲜᲣᲚᲘ ᲡᲐᲡᲬᲐᲕᲚᲝ ᲞᲠᲝᲒᲠᲐᲛᲐ „ᲙᲔᲜᲭᲘᲡᲧᲠᲘᲡ ᲨᲔᲓᲔᲒᲔᲑᲘᲡ ᲨᲔᲛᲐᲯᲐᲛᲔᲑᲔᲚᲘ ᲝᲥᲛᲘᲡ ᲨᲔᲓᲒᲔᲜᲘᲡ ᲢᲔᲥᲜᲘᲙᲐ“</p>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="js/oqmi.js"></script>
 </body>
 </html>
