@@ -43,10 +43,41 @@ $(window).resize(function(){
     $(".bullets").css({'height':($(".oqmi").height()+'px')});
 });
 
-$("#minus").click(function(){
-    $('p').filter(function () {
-        return $(this).css("font-size") === "16px";
-       })
-    $(".grid-header").css("font-size",size + "px");
-    console.log(`clicked ${$('.grid-header').css('font-size')}`)
-})
+$(document).ready(function(){
+    var resize = new Array('.resizable');
+    resize = resize.join(',');
+    
+    //resets the font size when "reset" is clicked
+    var resetFont = $(resize).css('font-size');
+      $(".reset").click(function(){
+        $(resize).css('font-size', resetFont);
+      });
+    
+    //increases font size when "+" is clicked
+    $(".increase").click(function(){
+      var originalFontSize = $(resize).css('font-size');
+      var originalFontLineHeight = $(resize).css('line-height');
+      var originalFontNumber = parseFloat(originalFontSize, 10);
+      var originalFontLineSpace = parseFloat(originalFontLineHeight, 10);
+      var newFontSize = originalFontNumber*1.2;
+      var newFontLineHeight = originalFontLineSpace+3+"px";
+      $(resize).css('font-size', newFontSize);
+      $(resize).css('line-height', newFontLineHeight);
+      return false;
+    });
+    
+    //decrease font size when "-" is clicked
+    
+    $(".decrease").click(function(){
+      var originalFontSize = $(resize).css('font-size');
+      var originalFontLineHeight = $(resize).css('line-height');
+      var originalFontNumber = parseFloat(originalFontSize, 10);
+      var originalFontLineSpace = parseFloat(originalFontLineHeight, 10);
+      var newFontSize = originalFontNumber*0.8;
+      var newFontLineHeight = originalFontLineSpace-3+"px";
+      $(resize).css('font-size', newFontSize);
+      $(resize).css('line-height', newFontLineHeight);
+      return false;
+    });
+    
+  });

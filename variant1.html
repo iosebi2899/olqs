@@ -36,7 +36,7 @@
             <p>ქვემოთ მოცემული მონაცემების გათვალისწინებით, შეავსეთ სავარჯიშო ოქმების შესაბამისი გრაფები. დარჩენილ ცარიელ გრაფებში შეტანილ უნდა იქნეს სიმბოლო „X“.</p>
         </div>
         <div class="flex-header-right">
-            <div class="resize"><button id="minus"><i class="fas fa-minus"></i></button> AA <button id="plus"><i class="fas fa-plus"></i></button></div>
+            <div class="resize"><button class="decrease"><i class="fas fa-minus"></i></button> AA <button class="increase"><i class="fas fa-plus"></i></button></div>
             <div class="time-left">დარჩენილი დრო: <span id="time">20:00</span></div>
         </div>
     </header>
@@ -68,7 +68,7 @@
             <div class="top-grid">
                 <div class="grid-item">
                     <div class="grid-row-left">
-                        <p class=grid-num>1</p><p class="grid-header">ერთიან სიაში</p><p class="grid-label">ამომრჩეველთა რაოდენობა</p></div>
+                        <p class="grid-num">1</p><p class="grid-header">ერთიან სიაში</p><p class="grid-label">ამომრჩეველთა რაოდენობა</p></div>
                     <div class="grid-row-right">
                         <p class="but-bold">X</p>
                         <p class="but-bold">8</p>
@@ -78,7 +78,7 @@
                 </div>
                 <div class="grid-item">
                     <div class="grid-row-left">
-                        <p class=grid-num>2</p><p class="grid-header">მიღებული</p><p class="grid-label">საარჩევნო ბიულეტენების რაოდენობა</p></div>
+                        <p class="grid-num">2</p><p class="grid-header">მიღებული</p><p class="grid-label">საარჩევნო ბიულეტენების რაოდენობა</p></div>
                     <div class="grid-row-right">
                         <p class="but-bold">X</p>
                         <p class="but-bold">8</p>
@@ -88,7 +88,7 @@
                 </div>
                 <div class="grid-item">
                     <div class="grid-row-left">
-                        <p class=grid-num>3</p><p class="grid-header">სპეციალურ სიაში</p><p class="grid-label">ამომრჩეველთა რაოდენობა</p></div>
+                        <p class="grid-num">3</p><p class="grid-header">სპეციალურ სიაში</p><p class="grid-label">ამომრჩეველთა რაოდენობა</p></div>
                     <div class="grid-row-right">
                         <input onkeypress="return isNumberKey(event)" id="a1" class="but-bold form-input" maxlength="1">
                         <input onkeypress="return isNumberKey(event)" id="a2" class="but-bold form-input" maxlength="1">
@@ -98,7 +98,7 @@
                 </div>
                 <div class="grid-item vertical">
                     <div class="grid-row-left">
-                        <p class=grid-num>4</p><p class="grid-label no-left-margin">არჩევნებში მონაწილე ამომრჩეველთა ხელმოწერების რაოდენობა ყველა სახის ამომრჩეველთა სიაში</p></div>
+                        <p class="grid-num">4</p><p class="grid-label no-left-margin">არჩევნებში მონაწილე ამომრჩეველთა ხელმოწერების რაოდენობა ყველა სახის ამომრჩეველთა სიაში</p></div>
                     <div class="grid-row-right wider">
                         <label class="left-label regular" for="a"><span class="wider-identifier regular">ა</span><p class="label-text">12:00 საათისთვის</p></label>
                         <input onkeypress="return isNumberKey(event)" id="b1" class="but-bold form-input" maxlength="1">
@@ -114,7 +114,7 @@
                 </div>
                 <div class="grid-item">
                     <div class="grid-row-left">
-                        <p class=grid-num>5</p><p class="grid-header">არჩევნებში მონაწილე ამომრჩეველთა საერთო რაოდენობა<br><span class="grid-label lower">(ხელმოწერების ჯამი ყველა სახის სიაში)</span></p></div>
+                        <p class="grid-num">5</p><p class="grid-header">არჩევნებში მონაწილე ამომრჩეველთა საერთო რაოდენობა<br><span class="grid-label lower">(ხელმოწერების ჯამი ყველა სახის სიაში)</span></p></div>
                     <div class="grid-row-right">
                         <input onkeypress="return isNumberKey(event)" id="d1" class="but-bold form-input" maxlength="1">
                         <input onkeypress="return isNumberKey(event)" id="d2" class="but-bold form-input" maxlength="1">
@@ -126,7 +126,7 @@
                     <div class="absolute-left">მიღებულ ხმათა რაოდენობა</div>
                     <div class="grid-item">
                         <div class="grid-row-left">
-                            <p class=grid-num>111</p><p class="grid-header">N111 მაჟორიტარი კანდიდატი</p></div>
+                            <p class="grid-num">111</p><p class="grid-header">N111 მაჟორიტარი კანდიდატი</p></div>
                         <div class="grid-row-right">
                             <input onkeypress="return isNumberKey(event)" id="e1" class="but-bold form-input" maxlength="1">
                             <input onkeypress="return isNumberKey(event)" id="e2" class="but-bold form-input" maxlength="1">
@@ -137,7 +137,7 @@
                     </div>
                     <div class="grid-item">
                         <div class="grid-row-left">
-                            <p class=grid-num>112</p><p class="grid-header">N112 მაჟორიტარი კანდიდატი</p></div>
+                            <p class="grid-num">112</p><p class="grid-header">N112 მაჟორიტარი კანდიდატი</p></div>
                         <div class="grid-row-right">
                             <input onkeypress="return isNumberKey(event)" id="f1" class="but-bold form-input" maxlength="1">
                             <input onkeypress="return isNumberKey(event)" id="f2" class="but-bold form-input" maxlength="1">
@@ -148,7 +148,7 @@
                     </div>
                     <div class="grid-item">
                         <div class="grid-row-left">
-                            <p class=grid-num>113</p><p class="grid-header">N113 მაჟორიტარი კანდიდატი</p></div>
+                            <p class="grid-num">113</p><p class="grid-header">N113 მაჟორიტარი კანდიდატი</p></div>
                         <div class="grid-row-right">
                             <input onkeypress="return isNumberKey(event)" id="g1" class="but-bold form-input" maxlength="1">
                             <input onkeypress="return isNumberKey(event)" id="g2" class="but-bold form-input" maxlength="1">
@@ -159,7 +159,7 @@
                     </div>
                     <div class="grid-item padding-bottom">
                         <div class="grid-row-left">
-                            <p class=grid-num>114</p><p class="grid-header">N114 მაჟორიტარი კანდიდატი</p></div>
+                            <p class="grid-num">114</p><p class="grid-header">N114 მაჟორიტარი კანდიდატი</p></div>
                         <div class="grid-row-right">
                             <input onkeypress="return isNumberKey(event)" id="h1" class="but-bold form-input" maxlength="1">
                             <input onkeypress="return isNumberKey(event)" id="h2" class="but-bold form-input" maxlength="1">
@@ -172,7 +172,7 @@
                 </div>
                 <div class="grid-item">
                     <div class="grid-row-left">
-                        <p class=grid-num>6</p><p class="grid-header">ბათილად მიჩნეული საარჩევნო ბიულეტენების რაოდენობა<br><span class="grid-label lower">(სხვა უბნისათვის განკუთვნილი ბათილი საარჩევნო ბიულეტენების რაოდენობა არ ემატება)</span></p></div>
+                        <p class="grid-num">6</p><p class="grid-header">ბათილად მიჩნეული საარჩევნო ბიულეტენების რაოდენობა<br><span class="grid-label lower">(სხვა უბნისათვის განკუთვნილი ბათილი საარჩევნო ბიულეტენების რაოდენობა არ ემატება)</span></p></div>
                     <div class="grid-row-right">
                         <input onkeypress="return isNumberKey(event)" id="e1" class="but-bold form-input" maxlength="1">
                         <input onkeypress="return isNumberKey(event)" id="e2" class="but-bold form-input" maxlength="1">
@@ -351,22 +351,22 @@
             <h2>I ᲕᲐᲠᲘᲐᲜᲢᲘ</h2>
             <hr>
             <ul>
-                <li>სპეციალურ სიაში ამომრჩეველთა რაოდენობა: <span>12</span></li>
-                <li>არჩევნებში მონაწილე ამომრჩეველთა ხელმოწერების რაოდენობა ყველა სახის ამომრჩეველთა სიებში 12 საათზე: <span>96</span> და 17 საათზე: <span>637</span></li>
-                <li>ერთიან სიაში ამომრჩეველთა ხელმოწერების რაოდენობა: <span>721</span></li>
-                <li>სპეციალურ სიაში ამომრჩეველთა ხელმოწერების რაოდენობა: <span>11</span></li>
-                <li>გადასატანი საარჩევნო ყუთის სიაში ამომრჩეველთა ხელმოწერების რაოდენობა: <span>24</span></li>
-                <li>რეგისტრატორების ახსნა-განმარტებების მიხედვით გამორჩენილი ხელმოწერების რაოდენობა: <span>3</span></li>
-                <li>ბათილად მიჩნეული <span>მაჟორიტარული</span> საარჩევნო ბიულეტენების რაოდენობა: <span>17</span></li>
-                <li class="more-top-margin">საარჩევნო სუბიექტებისთვის მიცემულ ხმათა რაოდენობა:<br><br>N111 მაჟორიტარი კანდიდატი: <span>180</span></li>
-                <li>N112 მაჟორიტარი კანდიდატი: <span>205</span></li>
-                <li>N113 მაჟორიტარი კანდიდატი: <span>300</span></li>
-                <li>N114 მაჟორიტარი კანდიდატი: <span>53</span></li>
-                <li class="more-top-margin">ბათილად მიჩნეული <span>პროპორციული</span> საარჩევნო ბიულეტენების რაოდენობა: <span>9</span></li>
-                <li>N111 პარტია: <span>80</span></li>
-                <li>N112 პარტია: <span>305</span></li>
-                <li>N113 პარტია: <span>204</span></li>
-                <li>N114 პარტია: <span>161</span></li>
+                <li class="resizable">სპეციალურ სიაში ამომრჩეველთა რაოდენობა: <span>12</span></li>
+                <li class="resizable">არჩევნებში მონაწილე ამომრჩეველთა ხელმოწერების რაოდენობა ყველა სახის ამომრჩეველთა სიებში 12 საათზე: <span>96</span> და 17 საათზე: <span>637</span></li>
+                <li class="resizable">ერთიან სიაში ამომრჩეველთა ხელმოწერების რაოდენობა: <span>721</span></li>
+                <li class="resizable">სპეციალურ სიაში ამომრჩეველთა ხელმოწერების რაოდენობა: <span>11</span></li>
+                <li class="resizable">გადასატანი საარჩევნო ყუთის სიაში ამომრჩეველთა ხელმოწერების რაოდენობა: <span>24</span></li>
+                <li class="resizable">რეგისტრატორების ახსნა-განმარტებების მიხედვით გამორჩენილი ხელმოწერების რაოდენობა: <span>3</span></li>
+                <li class="resizable">ბათილად მიჩნეული <span>მაჟორიტარული</span> საარჩევნო ბიულეტენების რაოდენობა: <span>17</span></li>
+                <li class="resizable more-top-margin">საარჩევნო სუბიექტებისთვის მიცემულ ხმათა რაოდენობა:<br><br>N111 მაჟორიტარი კანდიდატი: <span>180</span></li>
+                <li class="resizable">N112 მაჟორიტარი კანდიდატი: <span>205</span></li>
+                <li class="resizable">N113 მაჟორიტარი კანდიდატი: <span>300</span></li>
+                <li class="resizable">N114 მაჟორიტარი კანდიდატი: <span>53</span></li>
+                <li class="resizable more-top-margin">ბათილად მიჩნეული <span>პროპორციული</span> საარჩევნო ბიულეტენების რაოდენობა: <span>9</span></li>
+                <li class="resizable">N111 პარტია: <span>80</span></li>
+                <li class="resizable">N112 პარტია: <span>305</span></li>
+                <li class="resizable">N113 პარტია: <span>204</span></li>
+                <li class="resizable">N114 პარტია: <span>161</span></li>
             </ul>
         </div>
     </main>
