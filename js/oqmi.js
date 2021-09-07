@@ -70,9 +70,7 @@ $(document).ready(function(){
     resize = resize.join(',');
     
     let size = getCookie("saveFontSize");
-    setInterval(() => {
-      console.log(size)
-    }, 1000);
+    
     var originalFontSize = $(resize).css('font-size');
       if(size !=""){
       $(resize).css('font-size',size)
@@ -88,17 +86,18 @@ $(document).ready(function(){
       $(resize).css('font-size', newFontSize);
       $(resize).css('line-height', newFontLineHeight);
       setCookie("saveFontSize", newFontSize);
+      console.log(size)
        return false;
     });
     
     //decrease font size when "-" is clicked
-    
     $(".decrease").click(function(){
       var newFontSize = originalFontNumber*0.8;
       var newFontLineHeight = originalFontLineSpace-3+"px";
       $(resize).css('font-size', newFontSize);
       $(resize).css('line-height', newFontLineHeight);
       setCookie("saveFontSize", newFontSize);
+      console.log(size)
        return false;
     });
     
