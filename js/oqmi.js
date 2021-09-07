@@ -68,10 +68,11 @@ $(document).ready(function(){
     var resize = new Array('.resizable');
     resize = resize.join(',');
 
-    setCookie("saveFontSize", $(resize).css('font-size'))
     let size = getCookie("saveFontSize");
       if(size !=""){
       $(resize).css('font-size',size)
+      }else{
+        return false;
       }
 
     //increases font size when "+" is clicked
