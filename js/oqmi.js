@@ -82,7 +82,7 @@ $(document).ready(function(){
       var originalFontLineSpace = parseFloat(originalFontLineHeight, 10);
       $(resize).css('font-size', originalFontNumber*1.2);
       $(resize).css('line-height', originalFontLineSpace+3+"px");
-      setCookie("saveFontSize", `${$(resize).css('font-size')}`);
+      setCookie("saveFontSize", $(resize).css('font-size'));
       console.log(size)
        return false;
     });
@@ -95,7 +95,7 @@ $(document).ready(function(){
       var originalFontLineSpace = parseFloat(originalFontLineHeight, 10);
       $(resize).css('font-size', originalFontNumber*0.8);
       $(resize).css('line-height', originalFontLineSpace-3+"px");
-      setCookie("saveFontSize", `${$(resize).css('font-size')}`);
+      setCookie("saveFontSize", $(resize).css('font-size'));
       console.log(document.cookie)
        return false;
     });
