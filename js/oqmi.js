@@ -97,7 +97,7 @@ $(document).ready(function(){
       $(resize).css('font-size', newFontSize);
       $(resize).css('line-height', newFontLineHeight);
       setCookie("saveFontSize", newFontSize);
-      console.log(size)
+      console.log(document.cookie)
        return false;
     });
     
