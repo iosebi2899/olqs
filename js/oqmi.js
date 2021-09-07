@@ -86,6 +86,10 @@ $(document).ready(function(){
       setCookie("saveFontSize", $(resize).css('font-size'));
       setCookie("saveLineHeight", $(resize).css('line-height'));
       console.log(document.cookie)
+      console.log( $(resize).css('font-size'))
+      console.log( $(resize).css('line-height'))
+      console.log(size)
+      console.log(lineHeight)
        return false;
     });
     
@@ -100,6 +104,10 @@ $(document).ready(function(){
       setCookie("saveFontSize", $(resize).css('font-size'));
       setCookie("saveLineHeight", $(resize).css('line-height'));
       console.log(document.cookie)
+      console.log( $(resize).css('font-size'))
+      console.log( $(resize).css('line-height'))
+      console.log(size)
+      console.log(lineHeight)
        return false;
     });
     
