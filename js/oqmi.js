@@ -36,11 +36,11 @@ $(".form-input").keyup(function () {
     $(this).next('.form-input').focus();
   }
 });
-$(document).ready(function(){
-    $(".bullets").css({'height':($(".oqmi").height()+'px')});
-});
+
+$(".bullets").css('height',$(".oqmi").css('height'));
+
 $(window).resize(function(){
-    $(".bullets").css({'height':($(".oqmi").height()+'px')});
+    $(".bullets").css('height',$(".oqmi").css('height'));
 });
 
 
@@ -82,7 +82,7 @@ $(document).ready(function(){
       var originalFontNumber = parseFloat(originalFontSize, 10);
       var originalFontLineSpace = parseFloat(originalFontLineHeight, 10);
       $(resize).css('font-size', originalFontNumber*1.2);
-      $(resize).css('line-height', originalFontLineSpace+3+"px");
+      $(resize).css('line-height', originalFontLineSpace+4+"px");
       setCookie("saveFontSize", $(resize).css('font-size'));
       setCookie("saveLineHeight", $(resize).css('line-height'));
       console.log(document.cookie)
@@ -100,7 +100,7 @@ $(document).ready(function(){
       var originalFontNumber = parseFloat(originalFontSize, 10);
       var originalFontLineSpace = parseFloat(originalFontLineHeight, 10);
       $(resize).css('font-size', originalFontNumber*0.8);
-      $(resize).css('line-height', originalFontLineSpace-3+"px");
+      $(resize).css('line-height', originalFontLineSpace-4+"px");
       setCookie("saveFontSize", $(resize).css('font-size'));
       setCookie("saveLineHeight", $(resize).css('line-height'));
       console.log(document.cookie)
