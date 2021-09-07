@@ -45,7 +45,6 @@ $(window).resize(function(){
 
 
 $(document).ready(function(){
-  
   function setCookie(cname,cvalue) {
     document.cookie = cname + "=" + cvalue + ";path=/";
   }
@@ -65,6 +64,7 @@ $(document).ready(function(){
     }
     return "";
   }
+  setCookie("saveFontSize",$(resize).css('font-size'))
   
     var resize = new Array('.resizable');
     resize = resize.join(',');
