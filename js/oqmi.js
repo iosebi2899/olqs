@@ -75,6 +75,7 @@ $(document).ready(function(){
       console.log(size)
     if(size !=""){
       originalFontSize = size
+      $(resize).css('font-size',size)
     }
       var originalFontLineHeight = $(resize).css('line-height');
       var originalFontNumber = parseFloat(originalFontSize, 10);
