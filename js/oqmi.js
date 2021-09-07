@@ -70,9 +70,10 @@ $(document).ready(function(){
     resize = resize.join(',');
     
     let size = getCookie("saveFontSize");
-
-    var originalFontSize = $(resize).css('font-size');
+    setInterval(() => {
       console.log(size)
+    }, 1000);
+    var originalFontSize = $(resize).css('font-size');
       if(size !=""){
       $(resize).css('font-size',size)
       }
