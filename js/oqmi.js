@@ -71,25 +71,21 @@ $(document).ready(function(){
     
     let size = getCookie("saveFontSize");
 
-    //increases font size when "+" is clicked
-    $(".increase").click(function(){
-      
-      var originalFontSize = $(resize).css('font-size');
-
+    var originalFontSize = $(resize).css('font-size');
       console.log(size)
-      if(size !=""){
-        originalFontSize = size
-        
-      }
-      
+    if(size !=""){
+      originalFontSize = size
+    }
       var originalFontLineHeight = $(resize).css('line-height');
       var originalFontNumber = parseFloat(originalFontSize, 10);
       var originalFontLineSpace = parseFloat(originalFontLineHeight, 10);
+
+    //increases font size when "+" is clicked
+    $(".increase").click(function(){
       var newFontSize = originalFontNumber*1.2;
       var newFontLineHeight = originalFontLineSpace+3+"px";
       $(resize).css('font-size', newFontSize);
       $(resize).css('line-height', newFontLineHeight);
-      fontSize = $(resize).css('font-size');
       setCookie("saveFontSize", newFontSize);
        return false;
     });
@@ -105,6 +101,8 @@ $(document).ready(function(){
       var newFontLineHeight = originalFontLineSpace-3+"px";
       $(resize).css('font-size', newFontSize);
       $(resize).css('line-height', newFontLineHeight);
+      setCookie("saveFontSize", newFontSize);
+       return false;
       return false;
     });
     
