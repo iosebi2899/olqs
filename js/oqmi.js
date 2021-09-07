@@ -71,8 +71,6 @@ $(document).ready(function(){
     let size = getCookie("saveFontSize");
       if(size !=""){
       $(resize).css('font-size',size)
-      }else{
-        return false;
       }
 
     //increases font size when "+" is clicked
