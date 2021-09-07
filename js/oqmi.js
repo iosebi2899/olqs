@@ -82,7 +82,7 @@ $(document).ready(function(){
       $(resize).css('font-size', originalFontNumber*1.2);
       $(resize).css('line-height', originalFontLineSpace+3+"px");
       setCookie("saveFontSize", $(resize).css('font-size'));
-      console.log(size)
+      console.log(document.cookie)
        return false;
     });
     
