@@ -94,10 +94,6 @@ $(document).ready(function(){
     //decrease font size when "-" is clicked
     
     $(".decrease").click(function(){
-      var originalFontSize = $(resize).css('font-size');
-      var originalFontLineHeight = $(resize).css('line-height');
-      var originalFontNumber = parseFloat(originalFontSize, 10);
-      var originalFontLineSpace = parseFloat(originalFontLineHeight, 10);
       var newFontSize = originalFontNumber*0.8;
       var newFontLineHeight = originalFontLineSpace-3+"px";
       $(resize).css('font-size', newFontSize);
