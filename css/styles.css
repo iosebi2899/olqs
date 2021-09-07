@@ -332,13 +332,27 @@ footer p{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition:0.3s;
 }
+.test-grid a:hover{
+    background-color: #4CBA78;
+    border-color:#4CBA78;
+    color: white;
+}
+
 .fa-arrow-right{
     margin-left: 10px;
     font-size: 16px;
     background-color: #EFF4F6;
     border-radius: 4px;
     padding: 7px;
+    color: #343B43;
+    transition: 0.3s;
+}
+.test-grid a:hover .fa-arrow-right{
+    background-color: white;
+    border-color:#4CBA78;
+    color: #4CBA78;
 }
 @media (max-width:1420px){
     .test-grid a{
