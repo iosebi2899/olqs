@@ -73,10 +73,9 @@ $(document).ready(function(){
 
     var originalFontSize = $(resize).css('font-size');
       console.log(size)
-    if(size !=""){
-      originalFontSize = size
+      if(size !=""){
       $(resize).css('font-size',size)
-    }
+      }
       var originalFontLineHeight = $(resize).css('line-height');
       var originalFontNumber = parseFloat(originalFontSize, 10);
       var originalFontLineSpace = parseFloat(originalFontLineHeight, 10);
@@ -104,7 +103,6 @@ $(document).ready(function(){
       $(resize).css('line-height', newFontLineHeight);
       setCookie("saveFontSize", newFontSize);
        return false;
-      return false;
     });
     
   });
