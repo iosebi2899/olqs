@@ -43,19 +43,45 @@ $(window).resize(function(){
     $(".bullets").css({'height':($(".oqmi").height()+'px')});
 });
 
+
 $(document).ready(function(){
+  
+  function setCookie(cname,cvalue) {
+    document.cookie = cname + "=" + cvalue + ";path=/";
+  }
+  
+  function getCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for(let i = 0; i < ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
+  
     var resize = new Array('.resizable');
     resize = resize.join(',');
     
-    //resets the font size when "reset" is clicked
-    var resetFont = $(resize).css('font-size');
-      $(".reset").click(function(){
-        $(resize).css('font-size', resetFont);
-      });
-    
+    let size = getCookie("saveFontSize");
+
     //increases font size when "+" is clicked
     $(".increase").click(function(){
+      
       var originalFontSize = $(resize).css('font-size');
+
+      console.log(size)
+      if(size !=""){
+        originalFontSize = size
+        
+      }
+      
       var originalFontLineHeight = $(resize).css('line-height');
       var originalFontNumber = parseFloat(originalFontSize, 10);
       var originalFontLineSpace = parseFloat(originalFontLineHeight, 10);
@@ -63,7 +89,9 @@ $(document).ready(function(){
       var newFontLineHeight = originalFontLineSpace+3+"px";
       $(resize).css('font-size', newFontSize);
       $(resize).css('line-height', newFontLineHeight);
-      return false;
+      fontSize = $(resize).css('font-size');
+      setCookie("saveFontSize", newFontSize);
+       return false;
     });
     
     //decrease font size when "-" is clicked
@@ -81,3 +109,39 @@ $(document).ready(function(){
     });
     
   });
+
+  function setCookie(cname,cvalue,exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    let expires = "expires=" + d.toGMTString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  }
+  
+  function getCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for(let i = 0; i < ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
+  
+  function checkCookie() {
+    let user = getCookie("username");
+    if (user != "") {
+      alert("Welcome again " + user);
+    } else {
+       user = prompt("Please enter your name:","");
+       if (user != "" && user != null) {
+         setCookie("username", user, 30);
+       }
+    }
+  }
+  checkCookie()
