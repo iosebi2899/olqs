@@ -668,6 +668,9 @@ footer p{
 }
 .bullets{
     width: calc(22% - 20px);
+    overflow-x: scroll;
+    overflow-y: hidden;
+
 }
 .oqmi-main-label{
     display: flex;
