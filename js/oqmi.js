@@ -64,8 +64,8 @@ $(document).ready(function(){
     }
     return "";
   }
-  setCookie("saveFontSize",$(resize).css('font-size'))
-  
+  setCookie("saveFontSize",`${$(resize).css('font-size')}`)
+
     var resize = new Array('.resizable');
     resize = resize.join(',');
     
@@ -82,7 +82,7 @@ $(document).ready(function(){
     $(".increase").click(function(){
       $(resize).css('font-size', originalFontNumber*1.2);
       $(resize).css('line-height', originalFontLineSpace+3+"px");
-      setCookie("saveFontSize", $(resize).css('font-size'));
+      setCookie("saveFontSize", `${$(resize).css('font-size')}`);
       console.log(size)
        return false;
     });
@@ -91,7 +91,7 @@ $(document).ready(function(){
     $(".decrease").click(function(){
       $(resize).css('font-size', originalFontNumber*0.8);
       $(resize).css('line-height', originalFontLineSpace-3+"px");
-      setCookie("saveFontSize", $(resize).css('font-size'));
+      setCookie("saveFontSize", `${$(resize).css('font-size')}`);
       console.log(document.cookie)
        return false;
     });
