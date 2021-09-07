@@ -354,6 +354,59 @@ footer p{
     border-color:#4CBA78;
     color: #4CBA78;
 }
+/* total points */
+.total-main{
+    height: calc(100vh - 77px);
+    background-color: #F8FAFB;
+    position: relative;
+}
+.total-main div{
+    position: absolute;
+    width: 30%;
+    top: 50%;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.total-main div h2{
+    font-family: 'BPG 2017 DejaVu Sans bold',monospace;
+    font-size: 21px;
+    width: 300px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #343B43;
+    padding: 25px 5px;
+    background-color: white;
+    border: 1px solid #343B43;
+    border-radius: 4px;
+    line-height: 65px;
+    margin-bottom: 35px;
+}
+.total-main div p{
+    font-family: 'BPG 2017 DejaVu Sans regular',monospace;
+    font-size: 16px;
+    color: #343B43;
+    margin-bottom: 5px;
+}
+.total-main div p span{
+    font-family: 'BPG 2017 DejaVu Sans bold',monospace;
+}
+.total-main div h2 .top{
+    color: #4CBA78;
+    font-size: 55px;
+    text-align: center;
+}
+.white{
+    background-color: white !important;
+}
+.total-main div a{
+    font-family: 'BPG 2017 DejaVu Sans regular',monospace;
+    color: white;
+    background-color:#4CBA78;
+    border-radius: 4px;
+    padding:21px 0;
+}
 @media (max-width:1420px){
     .test-grid a{
         font-size: 18px;
