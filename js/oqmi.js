@@ -70,7 +70,7 @@ $(document).ready(function(){
 
     let size = getCookie("saveFontSize");
     let lineHeight = getCookie("saveLineHeight")
-      if(size !=""){
+      if(size !="" && lineHeight !=""){
       $(resize).css('font-size',size)
       $(resize).css('line-height',lineHeight)
       }
