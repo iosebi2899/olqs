@@ -81,22 +81,18 @@ $(document).ready(function(){
 
     //increases font size when "+" is clicked
     $(".increase").click(function(){
-      var newFontSize = originalFontNumber*1.2;
-      var newFontLineHeight = originalFontLineSpace+3+"px";
-      $(resize).css('font-size', newFontSize);
-      $(resize).css('line-height', newFontLineHeight);
-      setCookie("saveFontSize", newFontSize);
+      $(resize).css('font-size', originalFontNumber*1.2);
+      $(resize).css('line-height', originalFontLineSpace+3+"px");
+      setCookie("saveFontSize", $(resize).css('font-size'));
       console.log(size)
        return false;
     });
     
     //decrease font size when "-" is clicked
     $(".decrease").click(function(){
-      var newFontSize = originalFontNumber*0.8;
-      var newFontLineHeight = originalFontLineSpace-3+"px";
-      $(resize).css('font-size', newFontSize);
-      $(resize).css('line-height', newFontLineHeight);
-      setCookie("saveFontSize", newFontSize);
+      $(resize).css('font-size', originalFontNumber*0.8);
+      $(resize).css('line-height', originalFontLineSpace-3+"px");
+      setCookie("saveFontSize", $(resize).css('font-size'));
       console.log(document.cookie)
        return false;
     });
