@@ -75,11 +75,11 @@ $(document).ready(function(){
       }
       var originalFontSize = $(resize).css('font-size');
       var originalFontLineHeight = $(resize).css('line-height');
-      var originalFontNumber = parseFloat(originalFontSize, 10);
-      var originalFontLineSpace = parseFloat(originalFontLineHeight, 10);
 
     //increases font size when "+" is clicked
     $(".increase").click(function(){
+      var originalFontNumber = parseFloat(originalFontSize, 10);
+      var originalFontLineSpace = parseFloat(originalFontLineHeight, 10);
       $(resize).css('font-size', originalFontNumber*1.2);
       $(resize).css('line-height', originalFontLineSpace+3+"px");
       setCookie("saveFontSize", `${$(resize).css('font-size')}`);
@@ -89,6 +89,8 @@ $(document).ready(function(){
     
     //decrease font size when "-" is clicked
     $(".decrease").click(function(){
+      var originalFontNumber = parseFloat(originalFontSize, 10);
+      var originalFontLineSpace = parseFloat(originalFontLineHeight, 10);
       $(resize).css('font-size', originalFontNumber*0.8);
       $(resize).css('line-height', originalFontLineSpace-3+"px");
       setCookie("saveFontSize", `${$(resize).css('font-size')}`);
