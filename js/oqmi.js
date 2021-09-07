@@ -70,11 +70,10 @@ $(document).ready(function(){
     resize = resize.join(',');
     
     let size = getCookie("saveFontSize");
-    
-    var originalFontSize = $(resize).css('font-size');
       if(size !=""){
       $(resize).css('font-size',size)
       }
+      var originalFontSize = $(resize).css('font-size');
       var originalFontLineHeight = $(resize).css('line-height');
       var originalFontNumber = parseFloat(originalFontSize, 10);
       var originalFontLineSpace = parseFloat(originalFontLineHeight, 10);
