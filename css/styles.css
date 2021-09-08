@@ -854,7 +854,7 @@ footer p{
 .top-grid .grid-item{
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding:10px;
     padding-left: 0;
     justify-content: space-between;
     background-color: #FBD5FC;
@@ -891,10 +891,11 @@ footer p{
     margin-left: 0 !important;
 }
 .grid-row-right{
-    width: 15%;
+    width: auto;
     justify-content: flex-end;
 }
 .top-grid .vertical{
+    position:relative;
     flex-direction: column;
     align-items: flex-start;
     grid-row-start:4;
@@ -919,26 +920,25 @@ footer p{
     margin: -10px 5px -10px 0;
     border: 1px dotted #343B43;
     border-radius: 3px;
-    padding: 5px 10px;
+    padding: 7px 10px;
 }
 .wider{
-    margin-top: 14px;
     margin-left: 60px;
     width: auto;
 }
 .grid-row-right input{
-    margin: -10px 5px -10px 0;
+    margin: -10px 3.85px -10px 0;
     border: 1px dotted #343B43;
     border-radius: 3px;
     padding: 5px 10px;
-    width: 34px;
+    width: 34.5px;
     height: 32px;
 }
 .wider-identifier{
     font-size: 20px;
     border: 1px solid #343B43;
     border-radius: 50%;
-    padding: 5px 10px;
+    padding: 3px 8px;
 }
 .label-text{
     padding: 0 !important;
@@ -952,20 +952,33 @@ footer p{
     padding-left: 40px;
     border-right: 10px solid #FBD5FC;
     margin-right: -11px;
-    padding-top: 13px;
-    padding-bottom: 13px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.absolute-num{
+    position: absolute;
+    top:27px;
+}
+.lower-padding{
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
+}
+.absolute-label{
+    margin-left: 56px !important;
 }
 .last-child{
+    text-align: center;
     bottom: 69px !important;
     color: #36369A !important;
     font-family: 'left' !important;
 }
 .first-child p{
+    text-align: center;
     color: #36369A;
     font-family: 'right',monospace !important;
 }
 .padding-bottom{
-    padding-bottom: 84px !important;
+    padding-bottom: 106px !important;
 }
 .absolute-left{
     position: absolute;
@@ -983,7 +996,7 @@ footer p{
 .absolute-bottom{
     position: absolute;
     left: 50%;
-    bottom: 0;
+    bottom: 22px;
     transform: translate(-50%,-50%);
     font-family:'BPG 2017 DejaVu Sans Caps',monospace;
     font-size: 21px;
@@ -1008,7 +1021,7 @@ footer p{
     margin-top:22px ;
 }
 .ring-numbers .flex-div{
-    width: 83%;
+    width: 87%;
 }
 .ring-numbers,.flex-div{
     display: flex;
@@ -1029,7 +1042,7 @@ footer p{
     
 }
 .tavikacebi-item{
-    width: 50%;
+    width: 52%;
     display: flex;
     margin-top: 30px;
 }
@@ -1038,6 +1051,7 @@ footer p{
 }
 .tavikacebi-item h4{
     font-size: 16px;
+    margin-right: 5px;
 }
 .item-div{
     display: flex;
@@ -1046,9 +1060,9 @@ footer p{
 }
 .item-div div{
     position: relative;
+    width: 113px;
 }
 .item-div div p{
-    margin-left: 22px;
     font-size: 13px;
     font-family:'BPG 2017 DejaVu Sans regular',monospace;
 }
@@ -1056,29 +1070,24 @@ footer p{
 .underline{
     position: absolute !important;
     width: 114px;
-    height: 2px;
+    height: 1.6px;
     background-color: #343B43;
-    bottom: 9px;
-    left: 19px;
 }
 .underline-second{
     position: absolute !important;
     width: 92px;
-    height: 2px;
+    height: 1.6px;
     background-color: #343B43;
-    bottom: 9px;
     right: 0px;
-}
-.item-div div .last-child{
-    margin-left: 40px !important;
 }
 .rotated-line{
     position: absolute;
-    width: 30px;
-    height: 2px;
+    width: 30px !important;
+    margin-left: 20px;
+    height: 1px;
     transform: rotate(-45deg);
     background-color: #343B43;
-    left: 20px;
+    left: -10px;
     top: 10px;
 }
 .members{
@@ -1089,12 +1098,12 @@ footer p{
     justify-content: space-between;
 }
 .members .component .item-div{
-    margin-top: 12px !important;
+    margin-top: 27px !important;
 }
 .members .regular{
     font-size:20px;
     position: absolute;
-    left: -75px;
+    left: -83px;
     top: 100px;
     transform: rotate(-90deg);
     letter-spacing: 6px;
@@ -1227,7 +1236,7 @@ footer p{
 }
 .relative-div img{
     position: absolute;
-    bottom: 20px;
+    bottom: -3px;
     height: 90px;
     right: 0;
     width: auto;
@@ -1260,7 +1269,6 @@ footer p{
     font-family: 'BPG 2017 DejaVu Sans bold',monospace;
     color: #EB4D4B;
     font-size: 34px;
-    margin-bottom: -25px;
 }
 .modal-dialog{
     top: 32% !important;
@@ -1305,6 +1313,17 @@ footer p{
 }
 .variant2-color{
     color: rgba(154, 207, 221,0.3) !important;
+}
+.no-border{
+    border: 0 !important;
+}
+.less-bold-padding{
+    padding: 3px 6px !important;
+    margin-right: 1px !important;
+}
+.droiwureba{
+    background-color: #EB4D4B !important;
+    border-color: transparent !important;
 }
 @media (max-width:1351px){
     .flex-header-right .resize{

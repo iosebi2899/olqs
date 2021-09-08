@@ -2,7 +2,8 @@ function startTimer(duration, display) {
     var timer = duration, minutes, seconds;
     setInterval(function () {
         if(minutes==5&&seconds==00){
-            $("#exampleModal").modal()
+            $("#exampleModal").modal();
+            $(".time-left").addClass('droiwureba');
         }
         minutes = parseInt(timer / 60, 10)
         seconds = parseInt(timer % 60, 10);
