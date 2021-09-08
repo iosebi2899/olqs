@@ -401,12 +401,17 @@ footer p{
 .white{
     background-color: white !important;
 }
-.total-main div a{
-    font-family: 'BPG 2017 DejaVu Sans regular',monospace;
-    color: white;
+.total-main .link{
     background-color:#4CBA78;
     border-radius: 4px;
     padding:21px 0;
+    color: white;
+    margin-top:33px;
+}
+.total-main div a{
+    font-family: 'BPG 2017 DejaVu Sans regular',monospace;
+    color: white;
+    
 }
 @media (max-width:1420px){
     .test-grid a{
