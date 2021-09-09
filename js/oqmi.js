@@ -5,6 +5,9 @@ function startTimer(duration, display) {
             $("#exampleModal").modal();
             $(".time-left").addClass('droiwureba');
         }
+        if(minutes==0&&seconds==01){
+          document.getElementById("oqmi").submit();
+        }
         minutes = parseInt(timer / 60, 10)
         seconds = parseInt(timer % 60, 10);
 
@@ -26,10 +29,14 @@ window.onload = function () {
 };
 function isNumberKey(evt){
     var charCode = (evt.which) ? evt.which : evt.keyCode
-    if (charCode > 31 && (charCode !=88&&(charCode != 120 &&(charCode < 48 || charCode > 57)))){
+    if(charCode == 4334){
+      console.log(evt)
+      return $(evt.path).val('X')
+    }
+    else if (charCode > 31 && (charCode !=88&&(charCode != 120 &&(charCode < 48 || charCode > 57)))){
         return false;
     }
-    return true;
+    else return evt.key;
 }
 
 $(".form-input").keyup(function () {

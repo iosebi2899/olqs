@@ -32,8 +32,8 @@
     <div class="responsive-error"><p>საიტის გამოყენება შესაძლებელია მხოლოდ ლეპტოპიდან ან პერსონალური კომპიუტერიდან</p></div>
     <header class="oqmi-header">
         <div class="flex-header-left">
-            <h1>ᲛᲐᲟᲝᲠᲘᲢᲐᲠᲣᲚᲘ ᲝᲥᲛᲘ (2/2)</h1>
-            <p>მარჯვენა (თეთრ ზოლში ან კუთხეში ან მხარეს) მოცემული მონაცემების გათვალისწინებით, შეავსეთ სავარჯიშო ოქმების შესაბამისი გრაფები. დარჩენილ ცარიელ გრაფებში შეტანილ უნდა იქნეს სიმბოლო „X“.</p>
+            <h1>ᲞᲠᲝᲞᲝᲠᲪᲘᲣᲚᲘ ᲝᲥᲛᲘ (2/2)</h1>
+            <p>მარჯვენა მხარეს მოცემული მონაცემების გათვალისწინებით, შეავსეთ სავარჯიშო ოქმების შესაბამისი გრაფები. დარჩენილ ცარიელ გრაფებში შეტანილ უნდა იქნეს სიმბოლო „X“.</p>
         </div>
         <div class="flex-header-right">
             <div class="resize"><button class="decrease"><i class="fas fa-minus"></i></button> AA <button class="increase"><i class="fas fa-plus"></i></button></div>
@@ -41,7 +41,7 @@
         </div>
     </header>
     <main class="oqmi-main">
-        <form class="oqmi variant2-bg">
+        <form id="oqmi" action="/total.html" class="oqmi variant2-bg">
             <div class="oqmi-main-label">
                 <p>მუნიციპალიტეტის ორგანოთა 2021 წლის 2 ოქტომბრის არჩევნები<br>საუბნო საარჩევნო კომისიის მაჟორიტარული საარჩევნო სისტემით<br>კენჭისყრის შედეგების შემაჯამებელი ოქმი</p>
                 <div class="identifier">
@@ -112,7 +112,7 @@
                         <input onkeypress="return isNumberKey(event)" id="c4" class="but-bold form-input" maxlength="1">
                     </div>
                 </div>
-                <div class="grid-item lower-padding variant2-bg variant variant2-br">
+                <div class="grid-item variant2-bg variant variant2-br">
                     <div class="grid-row-left">
                         <p class="grid-num variant2-bg">5</p><p class="grid-header">არჩევნებში მონაწილე ამომრჩეველთა საერთო რაოდენობა<br><span class="grid-label lower">(ხელმოწერების ჯამი ყველა სახის სიაში)</span></p></div>
                     <div class="grid-row-right">
@@ -270,7 +270,7 @@
                         <div><p class="last-child">k. kaxiZe</p><div class="underline-second"></div></div>
                     </div>
                     <div class="item-div">
-                        <div class="first-child"><p>dato asaniZe</p><div class="underline"></div></div>
+                        <div class="first-child"><p>daTo asaniZe</p><div class="underline"></div></div>
                         <div class="rotated-line"></div>
                         <div><p class="last-child">d. asaniZe</p><div class="underline-second"></div></div>
                     </div>
@@ -357,7 +357,7 @@
             <input type="submit" class="oqmi-submit" value="დადასტურება">
         </form>
         <div class="bullets">
-            <h2>I ᲕᲐᲠᲘᲐᲜᲢᲘ<br><span style="font-size: 14px;">ოქმის დავალების მონაცემები</span></h2>
+            <h2>I ᲕᲐᲠᲘᲐᲜᲢᲘ<br><span style="font-size: 14px;margin-top: 11px;    display: block;">ოქმის დავალების მონაცემები</span></h2>
             <hr>
             <ul id="style-1">
                 <li class="resizable">სპეციალურ სიაში ამომრჩეველთა რაოდენობა: <span>12</span></li>
@@ -366,12 +366,8 @@
                 <li class="resizable">სპეციალურ სიაში ამომრჩეველთა ხელმოწერების რაოდენობა: <span>11</span></li>
                 <li class="resizable">გადასატანი საარჩევნო ყუთის სიაში ამომრჩეველთა ხელმოწერების რაოდენობა: <span>24</span></li>
                 <li class="resizable">რეგისტრატორების ახსნა-განმარტებების მიხედვით გამორჩენილი ხელმოწერების რაოდენობა: <span>3</span></li>
-                <li class="resizable">ბათილად მიჩნეული <span>მაჟორიტარული</span> საარჩევნო ბიულეტენების რაოდენობა: <span>17</span></li>
-                <li class="resizable more-top-margin">საარჩევნო სუბიექტებისთვის მიცემულ ხმათა რაოდენობა:<br><br>N111 მაჟორიტარი კანდიდატი: <span>180</span></li>
-                <li class="resizable">N112 მაჟორიტარი კანდიდატი: <span>205</span></li>
-                <li class="resizable">N113 მაჟორიტარი კანდიდატი: <span>300</span></li>
-                <li class="resizable">N114 მაჟორიტარი კანდიდატი: <span>53</span></li>
                 <li class="resizable more-top-margin">ბათილად მიჩნეული <span>პროპორციული</span> საარჩევნო ბიულეტენების რაოდენობა: <span>9</span></li>
+                <li class="resizable">საარჩევნო სუბიექტებისთვის მიცემულ ხმათა რაოდენობა:<br><br>N111 მაჟორიტარი კანდიდატი: <span>180</span></li>
                 <li class="resizable">N111 პარტია: <span>80</span></li>
                 <li class="resizable">N112 პარტია: <span>305</span></li>
                 <li class="resizable">N113 პარტია: <span>204</span></li>
