@@ -117,6 +117,7 @@
     border: 0;
     outline: 0;
     transition: 0.3s;
+    text-decoration: none;
 }
 .personal-id .submit:hover{
     background-color: #656565;
@@ -383,6 +384,12 @@ footer p{
     border-radius: 4px;
     line-height: 65px;
     margin-bottom: 35px;
+}
+.total-main div h1{
+    font-family: 'BPG 2017 DejaVu Sans bold',monospace;
+    font-size: 31px;
+    color: #343B43;
+    margin-bottom: 55px;
 }
 .total-main div p{
     font-family: 'BPG 2017 DejaVu Sans regular',monospace;
@@ -786,7 +793,7 @@ footer p{
     font-family: 'BPG 2017 DejaVu Sans bold',monospace;
 }
 .regular{
-    font-family: 'BPG 2017 DejaVu Sans regular',monospace;
+    font-family: 'BPG 2017 DejaVu Sans regular',monospace !important;
     color: #343B43;
 }
 .identifier-grid{
@@ -1325,6 +1332,27 @@ footer p{
 .droiwureba{
     background-color: #EB4D4B !important;
     border-color: transparent !important;
+}
+.no-decoration{
+    left:50%;
+    text-decoration: none;
+    text-align: center;
+}
+.no-decoration:hover{
+    color: white !important;
+    text-decoration: none !important;
+}
+.correct{
+    border: 1px solid #7BED9F !important;
+    background-color: #7BED9F !important;
+    color: white !important;
+    margin-right: 4px !important;
+}
+.wrong{
+    border: 1px solid #FF6B81 !important;
+    background-color: #FF6B81 !important;
+    color: white !important;
+    margin-right: 4px !important;
 }
 @media (max-width:1351px){
     .flex-header-right .resize{
