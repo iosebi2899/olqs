@@ -43,6 +43,47 @@ $(".form-input").keyup(function () {
     $(this).next('.form-input').focus();
   }
 });
+$("#a4").keyup(function () {
+  if (this.value.length == this.maxLength) {
+    $("#b1").focus();
+  }
+});
+$("#b4").keyup(function () {
+  if (this.value.length == this.maxLength) {
+    $("#c1").focus();
+  }
+});
+$("#c4").keyup(function () {
+  if (this.value.length == this.maxLength) {
+    $("#d1").focus();
+  }
+});
+$("#d4").keyup(function () {
+  if (this.value.length == this.maxLength) {
+    $("#e1").focus();
+  }
+});
+$("#e4").keyup(function () {
+  if (this.value.length == this.maxLength) {
+    $("#f1").focus();
+  }
+});
+$("#f4").keyup(function () {
+  if (this.value.length == this.maxLength) {
+    $("#g1").focus();
+  }
+});
+$("#g4").keyup(function () {
+  if (this.value.length == this.maxLength) {
+    $("#h1").focus();
+  }
+});
+$("#h4").keyup(function () {
+  if (this.value.length == this.maxLength) {
+    $("#i1").focus();
+  }
+});
+
 
 $(".bullets").css('height',$(".oqmi").css('height'));
 
