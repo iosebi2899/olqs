@@ -2,6 +2,7 @@
     border:1px solid #343B43 !important;
     outline: 0 !important;
 }
+
 .main-header{
     position: relative;
     height: 100vh;
@@ -587,7 +588,7 @@ footer p{
     display: none; /*hide original SELECT element: */
   }
   .select-selected {
-    color: rgba(52, 59, 67,0.6) !important;
+    color: rgba(52, 59, 67,0.3) !important;
     padding: 20px 30px !important;
     border: 0;
   }

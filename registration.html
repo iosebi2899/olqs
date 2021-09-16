@@ -11,28 +11,28 @@
     <script src="https://kit.fontawesome.com/1bd888af31.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header id="header" class="main-header reg-header">
-        <a class="shown" id="a" href="auth.html"><i class="fas fa-user-circle"></i> ავტორიზაცია</a>
-        <a id="a" href="auth.html">გამოსვლა <i class="fas fa-sign-out-alt"></i></a>
+    <header tabindex="-1" id="header" class="main-header reg-header">
+        <a tabindex="-1" class="shown" id="a" href="auth.html"><i class="fas fa-user-circle"></i> ავტორიზაცია</a>
+        <a tabindex="-1" id="a" href="auth.html">გამოსვლა <i class="fas fa-sign-out-alt"></i></a>
     </header>
     <main class="reg-main">
         <div class="responsive-error"><p>საიტის გამოყენება შესაძლებელია მხოლოდ ლეპტოპიდან ან პერსონალური კომპიუტერიდან</p></div>
         <section class="registration">
             <div class="routeDiv">
                 <div class="target"></div>
-                <p class="route"><a href="index.html">მთავარი</a> <i class="fas fa-chevron-right"></i> რეგისტრაცია</p>
+                <p class="route"><a tabindex="-1" href="index.html">მთავარი</a> <i class="fas fa-chevron-right"></i> რეგისტრაცია</p>
             </div>
             <h1>ᲠᲔᲒᲘᲡᲢᲠᲐᲪᲘᲐ</h1>
             <form class="flex-form" novalidate autocomplete="off">
-                <input name="id" id="id" type="number" class="reg-input" placeholder="პირადი ნომერი">
+                <input disabled name="id" id="id" type="number" class="reg-input" placeholder="პირადი ნომერი">
                 <div class="reg-input autocomplete-input autocomplete">
-                    <input name="olqNum" id='olqNum' type="text" class="reg-input" placeholder="თქვენი საარჩევნო ოლქის ნომერი">
+                    <input tabindex="3" name="olqNum" id='olqNum' type="text" class="reg-input" placeholder="თქვენი საარჩევნო ოლქის ნომერი">
                 </div>
-                <input name="name" id='name' type="name" class="reg-input" placeholder="სახელი">
+                <input tabindex="1" name="name" id='name' type="name" class="reg-input" placeholder="სახელი">
                 <div class="reg-input autocomplete-input autocomplete">
-                    <input disabled name="strNum" id='strNum' type="number" class="reg-input" placeholder="თქვენი საარჩევნო უბნის ნომერი">
+                    <input tabindex="4" disabled name="strNum" id='strNum' type="number" class="reg-input" placeholder="თქვენი საარჩევნო უბნის ნომერი">
                 </div>
-                <input name="surname" id="surname" type="text" class="reg-input" placeholder="გვარი">
+                <input tabindex="2" name="surname" id="surname" type="text" class="reg-input" placeholder="გვარი">
                 <div class=" reg-input custom-select">
                     <select id="position" name="position" onchange="submit()" class="reg-input select-input" >
                         <option class="disabled-value" value="disabled" selected hidden>პოზიცია</option>
@@ -41,20 +41,20 @@
                     </select>
                     <div class="select_arrow"><i class="fas fa-chevron-down"></i></div>
                 </div>
-                <input name="submit" type="submit" onclick="return false" class="reg-submit" value="რეგისტრაცია"></input>
+                <input tabindex="6" name="submit" type="submit" onclick="return false" class="reg-submit" value="რეგისტრაცია"></input>
             </form>
             <p class="tiny"></p>
         </section>
         <section class="companies">
-            <a href="https://www.usaid.gov/"><img src="img/usaid.png" alt="usad"></a>
-            <a href="https://cesko.ge/"><img src="img/cesko.png" alt="cesko"></a>
-            <a href="http://www.electionreforms.ge/"><img src="img/Training-Center-Logo.png" alt="Training-Center-Logo"></a>
-            <a href="https://www.ifes.org/"><img src="img/ifes.png" alt="ifes"></a>
+            <a tabindex="-1" href="https://www.usaid.gov/"><img src="img/usaid.png" alt="usad"></a>
+            <a tabindex="-1" href="https://cesko.ge/"><img src="img/cesko.png" alt="cesko"></a>
+            <a tabindex="-1" href="http://www.electionreforms.ge/"><img src="img/Training-Center-Logo.png" alt="Training-Center-Logo"></a>
+            <a tabindex="-1" href="https://www.ifes.org/"><img src="img/ifes.png" alt="ifes"></a>
         </section>
     </main>
     <footer>
         <p>© 2021 ᲔᲚᲔᲥᲢᲠᲝᲜᲣᲚᲘ ᲡᲐᲡᲬᲐᲕᲚᲝ ᲞᲠᲝᲒᲠᲐᲛᲐ „ᲙᲔᲜᲭᲘᲡᲧᲠᲘᲡ ᲨᲔᲓᲔᲒᲔᲑᲘᲡ ᲨᲔᲛᲐᲯᲐᲛᲔᲑᲔᲚᲘ ᲝᲥᲛᲘᲡ ᲨᲔᲓᲒᲔᲜᲘᲡ ᲢᲔᲥᲜᲘᲙᲐ“</p>
-        <a href="#header"><i class="fas fa-arrow-up"></i></a>
+        <a tabindex="-1" href="#header"><i tabindex="-1" class="fas fa-arrow-up"></i></a>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="js/script.js"></script>
