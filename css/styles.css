@@ -997,12 +997,12 @@ footer p{
 }
 .split-line{
     position: absolute;
-    left: 51%;
+    left: calc(51% + 1px);
     background-color: black;
     top: 0;
     transform:translateX(-50%);
     width: 2px;
-    height: 120px;
+    height: 153px;
 }
 .first-child p{
     text-align: center;

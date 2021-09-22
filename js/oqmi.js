@@ -75,7 +75,7 @@ $("#f4").keyup(function () {
 });
 $("#g4").keyup(function () {
   if (this.value.length == this.maxLength) {
-    if($("#tb1").val()){
+    if(document.getElementById("tb1")){
       $("#tb1").focus();
     }else{
       $("#h1").focus();
