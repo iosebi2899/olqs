@@ -75,14 +75,30 @@ $("#f4").keyup(function () {
 });
 $("#g4").keyup(function () {
   if (this.value.length == this.maxLength) {
-    $("#h1").focus();
+    if($("#tb1")){
+      $("#tb1").focus();
+    }else{
+      $("#i1").focus();
+    }
   }
 });
-$("#h4").keyup(function () {
+$("#tb4").keyup(function () {
+  if (this.value.length == this.maxLength) {
+    $("#tb5").focus();
+  }
+});
+$("#tb8").keyup(function () {
+  if (this.value.length == this.maxLength) {
+    $("#tb9").focus();
+  }
+});
+$("#tb12").keyup(function () {
   if (this.value.length == this.maxLength) {
     $("#i1").focus();
   }
 });
+
+
 
 
 $(".bullets").css('height',$(".oqmi").css('height'));

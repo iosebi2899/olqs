@@ -955,11 +955,26 @@ footer p{
 .bottom-grid{
     position: relative;
 }
+.bottom-grid-tb{
+    position: relative;
+    display: flex;
+    padding-bottom: 150px;
+    justify-content: space-between;
+    background-color: #c5efe7 !important;
+}
+.bottom-grid-tb .bottom-grid-col{
+    width: 50%;
+}
+.bottom-grid-tb .bottom-grid-col .grid-item{
+    position: relative;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 .bottom-grid .grid-item{
     position: relative;
     padding-left: 40px;
     border-right: 10px solid #fde2d8;
-    margin-right: -11px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -976,9 +991,18 @@ footer p{
 }
 .last-child{
     text-align: center;
-    bottom: 69px !important;
+    bottom: -2px !important;
     color: #36369A !important;
     font-family: 'left' !important;
+}
+.split-line{
+    position: absolute;
+    left: 51%;
+    background-color: black;
+    top: 0;
+    transform:translateX(-50%);
+    width: 2px;
+    height: 120px;
 }
 .first-child p{
     text-align: center;
@@ -1020,7 +1044,7 @@ footer p{
     height: 1px;
     background-color: #343B43;
 }
-.bottom-grid .grid-item .grid-row-left .grid-num{
+.bottom-grid .grid-item .grid-row-left .grid-num,.bottom-grid-tb .bottom-grid-col .grid-item .grid-row-left .grid-num{
     font-size: 16px;
     border-style: dotted;
     padding: 5px;
