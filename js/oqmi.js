@@ -75,10 +75,10 @@ $("#f4").keyup(function () {
 });
 $("#g4").keyup(function () {
   if (this.value.length == this.maxLength) {
-    if($("#tb1")){
+    if($("#tb1").val()){
       $("#tb1").focus();
     }else{
-      $("#i1").focus();
+      $("#h1").focus();
     }
   }
 });
@@ -97,7 +97,11 @@ $("#tb12").keyup(function () {
     $("#i1").focus();
   }
 });
-
+$("#h4").keyup(function () {
+  if (this.value.length == this.maxLength) {
+    $("#i1").focus();
+  }
+});
 
 
 
