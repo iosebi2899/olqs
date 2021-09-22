@@ -958,7 +958,7 @@ footer p{
 .bottom-grid-tb{
     position: relative;
     display: flex;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
     justify-content: space-between;
     background-color: #c5efe7 !important;
 }
@@ -1002,7 +1002,7 @@ footer p{
     top: 0;
     transform:translateX(-50%);
     width: 2px;
-    height: 153px;
+    height: 112px;
 }
 .first-child p{
     text-align: center;
@@ -1014,13 +1014,13 @@ footer p{
 }
 .absolute-left{
     position: absolute;
-    left: -113px;
+    left: -100px;
     background-color: #f3c4b3;
     border: 1px solid #343B43;
     border-radius: 3px;
     transform: rotate(-90deg);
     top: 43.6%;
-    padding: 8px 30px;
+    padding: 8px 10px;
     z-index: 213;
     font-size: 13px;
     font-family:'BPG 2017 DejaVu Sans regular',monospace;
