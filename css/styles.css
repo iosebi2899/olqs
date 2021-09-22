@@ -419,7 +419,7 @@ footer p{
 .total-main div a{
     font-family: 'BPG 2017 DejaVu Sans regular',monospace;
     color: white;
-    
+
 }
 @media (max-width:1420px){
     .test-grid a{
@@ -472,7 +472,7 @@ footer p{
     border-style: solid;
     font-family: 'BPG 2017 DejaVu Sans bold',monospace;
     color: rgb(52, 59, 67);
-    
+
 }
 .auth form input::placeholder{
     color: rgba(52, 59, 67,0.6);
@@ -564,7 +564,7 @@ footer p{
     transition: 0.3s;
     pointer-events: none;
     color: #656565;
-   
+
 }
 .select-input::-ms-expand {
     display: none;
@@ -592,7 +592,7 @@ footer p{
     padding: 20px 30px !important;
     border: 0;
   }
-  
+
   .select-items div,.select-selected {
     color: #343B43;
     transition: 0.3s;
@@ -635,7 +635,7 @@ footer p{
     height: 100vh;
     overflow: hidden;
     position: relative;
-    z-index: 132; 
+    z-index: 132;
     padding: 10%;
     display: none;
     background-color: #F8FAFB;
@@ -743,7 +743,7 @@ footer p{
 .oqmi{
     width: 78%;
     margin: 10px;
-    background-color: #FBD5FC;
+    background-color: #fde2d8;
     padding: 30px 20px 100px 20px;
     position: relative;
 }
@@ -865,7 +865,7 @@ footer p{
     padding:10px;
     padding-left: 0;
     justify-content: space-between;
-    background-color: #FBD5FC;
+    background-color: #fde2d8;
 }
 
 .grid-row-left, .grid-row-right{
@@ -876,7 +876,7 @@ footer p{
     margin: -10px 10px -10px -8px;
     padding: 5px 18px;
     font-size: 24px;
-    background-color: #FBD5FC;
+    background-color: #fde2d8;
     font-family: 'BPG 2017 DejaVu Sans regular',monospace;
     color: #343B43;
     border: 1px solid #343B43;
@@ -958,7 +958,7 @@ footer p{
 .bottom-grid .grid-item{
     position: relative;
     padding-left: 40px;
-    border-right: 10px solid #FBD5FC;
+    border-right: 10px solid #fde2d8;
     margin-right: -11px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -991,7 +991,7 @@ footer p{
 .absolute-left{
     position: absolute;
     left: -113px;
-    background-color: #F8BFDF;
+    background-color: #f3c4b3;
     border: 1px solid #343B43;
     border-radius: 3px;
     transform: rotate(-90deg);
@@ -1008,10 +1008,10 @@ footer p{
     transform: translate(-50%,-50%);
     font-family:'BPG 2017 DejaVu Sans Caps',monospace;
     font-size: 21px;
-    color: #9ACFDD;
+    color: #97d6cd;
 }
 .variant1{
-    color: #E8A7C7;
+    color: #efbba8;
 }
 .absolute-line{
     position: absolute;
@@ -1047,7 +1047,7 @@ footer p{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    
+
 }
 .tavikacebi-item{
     width: 52%;
@@ -1206,7 +1206,7 @@ footer p{
           'wb wb wb wb';
   }
 .last-grid div{
-    background-color: #FBD5FC;
+    background-color: #fde2d8;
     text-align: center;
     font-family:'BPG 2017 DejaVu Sans regular',monospace;
     font-size: 13px;
@@ -1262,7 +1262,7 @@ footer p{
     transform: translate(-40%,-50%);
     font-size: 55px;
     letter-spacing: 16.5px;
-    color: rgba(232, 167, 199,0.3);
+    color: rgb(233 187 148 / 30%);
 }
 .modal-body{
     border: 0 !important;
@@ -1306,22 +1306,22 @@ footer p{
     margin-top: 30px;
 }
 .variant2-bg{
-    background-color: #C7FEFE !important;
+    background-color: #c5efe7 !important;
 }
 .variant2-dbg{
-    background-color: #ADE6ED !important;
+    background-color: #97d6cd !important;
 }
 .top-grid .variant2-bg,.bottom-grid .variant2-bg{
-    background-color: #C7FEFE !important;
+    background-color: #c5efe7 !important;
 }
 .bottom-grid .variant2-br{
-    border-color: #C7FEFE !important;
+    border-color: #c5efe7 !important;
 }
 .variant2 div{
-    background-color: #C7FEFE !important;
+    background-color: #c5efe7 !important;
 }
 .variant2-color{
-    color: rgba(154, 207, 221,0.3) !important;
+    color: rgb(144 212 209 / 30%) !important;
 }
 .no-border{
     border: 0 !important;
