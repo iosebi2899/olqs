@@ -105,14 +105,6 @@ $("#h4").keyup(function () {
 });
 
 
-
-$(".bullets").css('height',$(".oqmi").css('height'));
-
-$(window).resize(function(){
-    $(".bullets").css('height',$(".oqmi").css('height'));
-});
-
-
 $(document).ready(function(){
   function setCookie(cname,cvalue) {
     document.cookie = cname + "=" + cvalue + ";path=/";
