@@ -38,7 +38,11 @@ function isNumberKey(evt){
     }
     else return evt.key;
 }
-
+$(".form-input").mousedown(function () {
+  if (this.value.length == this.maxLength) {
+    $(this).val('')
+  }
+});
 $(".form-input").keyup(function () {
   if (this.value.length == this.maxLength) {
     $(this).next('.form-input').focus();
