@@ -755,8 +755,11 @@ footer p{
     overflow-y: scroll;
     height: 637px;
     -moz-box-shadow: inset 0 -10px 10px -10px rgba(20,20,20,0.5);
-  -webkit-box-shadow: inset 0 -10px 10px -10px rgba(20,20,20,0.5);
-  box-shadow: inset 0 -10px 10px -10px rgba(20,20,20,0.5);
+    -webkit-box-shadow: inset 0 -10px 10px -10px rgba(20,20,20,0.5);
+    box-shadow: inset 0 -10px 10px -10px rgba(20,20,20,0.5);
+}
+.bullets .tbilisi{
+    height: 589px !important;
 }
 #style-1::-webkit-scrollbar-track
 {
