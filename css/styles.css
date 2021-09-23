@@ -977,6 +977,7 @@ footer p{
     border-right: 10px solid #fde2d8;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin-right: -11px;
 }
 .absolute-num{
     position: absolute;
@@ -1398,7 +1399,4 @@ footer p{
         padding-left: 80px;
         padding-right: 80px;
     }
-}
-.form-input{
-    text-transform: uppercase;
 }

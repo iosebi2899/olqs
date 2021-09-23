@@ -29,9 +29,10 @@ window.onload = function () {
 };
 function isNumberKey(evt){
     var charCode = (evt.which) ? evt.which : evt.keyCode
-    if(charCode == 4334){
-      return $(evt.path).val('X')
+    if(!$(evt.path).val() && (charCode == 4334 || charCode == 120 || charCode == 1093)){
+      return $(evt.path).val('X')  
     }
+
     else if (charCode > 31 && (charCode !=88&&(charCode != 120 &&(charCode < 48 || charCode > 57)))){
         return false;
     }
