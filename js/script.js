@@ -282,6 +282,7 @@ $('.reg-submit').click(function(){
   console.log(num);
   
 });
+
 /* If the user clicks anywhere outside the select box,
 then close all select boxes: */
   autocomplete(document.getElementById("olqNum"), olqNum);
