@@ -1,3 +1,7 @@
+$(document).ready(function(){
+  $('#a1').focus()
+})
+
 function startTimer(duration, display) {
     var timer = duration, minutes, seconds;
     setInterval(function () {

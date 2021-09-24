@@ -1,3 +1,11 @@
+$(document).ready(function(){
+  if(document.getElementById('id')){
+    $("#name").focus();
+  }else{
+    $(".id").focus();
+  }
+});
+
 $('.submit').click(function() {
     if(/^(?=.*\d).{11}$/.test($('.id').val())==false){
         $('.personal-id').addClass('error-border');
