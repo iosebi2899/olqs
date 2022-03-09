@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>ოქმი-ვარიანტი 2</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/1bd888af31.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body regular">
+            <p class="body-header">ᲓᲠᲝ ᲘᲬᲣᲠᲔᲑᲐ!</p><br>
+          დარჩენილია 5 წუთი, იჩქარეთ
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="responsive-error"><p>საიტის გამოყენება შესაძლებელია მხოლოდ ლეპტოპიდან ან პერსონალური კომპიუტერიდან</p></div>
+    <header class="oqmi-header">
+
+        <div class="flex-header-left">
+            <h1>ᲝᲥᲛᲘ "Ა" (1/2)</h1>
+            <p>მარჯვენა მხარეს მოცემული მონაცემების გათვალისწინებით, შეავსეთ სავარჯიშო ოქმების შესაბამისი გრაფები. დარჩენილ ცარიელ გრაფებში შეტანილ უნდა იქნეს სიმბოლო „X“.</p>
+        </div>
+        <div class="flex-header-right">
+            <div class="resize"><button class="decrease"><i class="fas fa-minus"></i></button> AA <button class="increase"><i class="fas fa-plus"></i></button></div>
+            <div class="time-left">დარჩენილი დრო: <span id="time">20:00</span></div>
+        </div>
+    </header>
+    <main class="oqmi-main">
+        <form id="oqmi" class="oqmi" action="total.html">
+            <div class="oqmi-main-label">
+                <p>საქართველოს პარლამენტის შუალედური არჩევნები - 02.04.2022<br>საუბნო საარჩევნო კომისიის მაჟორიტარული საარჩევნო სისტემით<br>კენჭისყრის შედეგების შემაჯამებელი ოქმი</p>
+                <div class="identifier">
+                    <div class="dotted">
+                        <h4 class="but-bold">ფორმა <span class="regular">№1-1.10.12</span></h4>
+                        <div class="identifier-grid">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="count">
+                        <h4 class="but-bold">განკ. <span class="regular">№ 92/2021</span></h4>
+                        <h4 class="count-id">მიმაგრებული<br>უბნების №</span></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="doc-header">
+                <div class="olqNumber"><span class="but-bold" id="olqNumber">№20 რუსთავის</span><p>საარჩევნო ოლქი</p></div>
+                <div class="strNumber"><span class="but-bold" id="strNumber">№ 00</span><p>საარჩევნო უბანი</p></div>
+                <div class="text-align-right"><span class="doc-checkbox"></span></p>ხელახალი კენჭისყრა</div>
+            </div>
+            <div class="top-grid">
+                <div class="grid-item">
+                    <div class="grid-row-left">
+                        <p class="grid-num">1</p><p class="grid-header">ერთიან სიაში</p><p class="grid-label">ამომრჩეველთა რაოდენობა</p></div>
+                    <div class="grid-row-right">
+                        <p class="but-bold">1</p>
+                        <p class="but-bold">4</p>
+                        <p class="but-bold">5</p>
+                        <p class="but-bold">0</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="grid-row-left">
+                        <p class="grid-num">2</p><p class="grid-header">მიღებული</p><p class="grid-label">საარჩევნო ბიულეტენების რაოდენობა</p></div>
+                    <div class="grid-row-right">
+                        <p class="but-bold">1</p>
+                        <p class="but-bold">4</p>
+                        <p class="but-bold">5</p>
+                        <p class="but-bold">0</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="grid-row-left">
+                        <p class="grid-num">3</p><p class="grid-header">სპეციალურ სიაში</p><p class="grid-label">ამომრჩეველთა რაოდენობა</p></div>
+                    <div class="grid-row-right">
+                        <input onkeypress="return isNumberKey(event)" id="a1" class="but-bold form-input" maxlength="1" value="X">
+                        <input onkeypress="return isNumberKey(event)" id="a2" class="but-bold form-input" maxlength="1" value="X">
+                        <input onkeypress="return isNumberKey(event)" id="a3" class="but-bold form-input" maxlength="1" value="X">
+                        <input onkeypress="return isNumberKey(event)" id="a4" class="but-bold form-input" maxlength="1" value="7">
+                    </div>
+                </div>
+                <div class="grid-item vertical">
+                    <div class="grid-row-left">
+                        <p class="grid-num absolute-num">4</p><p class="grid-label absolute-label no-left-margin">არჩევნებში მონაწილე ამომრჩეველთა ხელმოწერების რაოდენობა ყველა სახის ამომრჩეველთა სიაში</p></div>
+                    <div class="grid-row-right wider">
+                        <label class="left-label regular" for="a"><span class="wider-identifier regular">ა</span><p style="margin-bottom: -13px;" class="label-text">12:00 საათისთვის</p></label>
+                        <input onkeypress="return isNumberKey(event)" id="b1" class="but-bold form-input" maxlength="1" value="X">
+                        <input onkeypress="return isNumberKey(event)" id="b2" class="but-bold form-input" maxlength="1" value="2">
+                        <input onkeypress="return isNumberKey(event)" id="b3" class="but-bold form-input" maxlength="1" value="3">
+                        <input onkeypress="return isNumberKey(event)" id="b4" class="but-bold form-input" maxlength="1" value="0">
+                        <label class="right-label regular" for="b"><span class="wider-identifier regular">ბ</span><p style="margin-bottom: -13px;" class="label-text">17:00 საათისთვის</p></label>
+                        <input onkeypress="return isNumberKey(event)" id="c1" class="but-bold form-input" maxlength="1" value="X">
+                        <input onkeypress="return isNumberKey(event)" id="c2" class="but-bold form-input" maxlength="1" value="5">
+                        <input onkeypress="return isNumberKey(event)" id="c3" class="but-bold form-input" maxlength="1" value="6">
+                        <input onkeypress="return isNumberKey(event)" id="c4" class="but-bold form-input" maxlength="1" value="1">
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="grid-row-left">
+                        <p class="grid-num">5</p><p class="grid-header">არჩევნებში მონაწილე ამომრჩეველთა საერთო რაოდენობა<br><span class="grid-label lower">(ხელმოწერების ჯამი ყველა სახის სიაში)</span></p></div>
+                    <div class="grid-row-right">
+                        <input onkeypress="return isNumberKey(event)" id="d1" class="but-bold form-input" maxlength="1" value="X">
+                        <input onkeypress="return isNumberKey(event)" id="d2" class="but-bold form-input" maxlength="1" value="8">
+                        <input onkeypress="return isNumberKey(event)" id="d3" class="but-bold form-input" maxlength="1" value="3">
+                        <input onkeypress="return isNumberKey(event)" id="d4" class="but-bold form-input" maxlength="1" value="1">
+                    </div>
+                </div>
+                <div class="bottom-grid">
+                    <div class="absolute-left">მიღებულ ხმათა რაოდენობა</div>
+                    <div class="grid-item">
+                        <div class="grid-row-left">
+                            <p class="grid-num">111</p><p class="grid-header">მაჟორიტარი კანდიდატი</p></div>
+                        <div class="grid-row-right">
+                            <input onkeypress="return isNumberKey(event)" id="e1" class="but-bold form-input" maxlength="1" value="X">
+                            <input onkeypress="return isNumberKey(event)" id="e2" class="but-bold form-input" maxlength="1" value="2">
+                            <input onkeypress="return isNumberKey(event)" id="e3" class="but-bold form-input" maxlength="1" value="3">
+                            <input onkeypress="return isNumberKey(event)" id="e4" class="but-bold form-input" maxlength="1" value="3">
+                        </div>
+                        <div class="absolute-line"></div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="grid-row-left">
+                            <p class="grid-num">112</p><p class="grid-header">მაჟორიტარი კანდიდატი</p></div>
+                        <div class="grid-row-right">
+                            <input onkeypress="return isNumberKey(event)" id="f1" class="but-bold form-input" maxlength="1" value="X">
+                            <input onkeypress="return isNumberKey(event)" id="f2" class="but-bold form-input" maxlength="1" value="X">
+                            <input onkeypress="return isNumberKey(event)" id="f3" class="but-bold form-input" maxlength="1" value="9">
+                            <input onkeypress="return isNumberKey(event)" id="f4" class="but-bold form-input" maxlength="1" value="7">
+                        </div>
+                        <div class="absolute-line"></div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="grid-row-left">
+                            <p class="grid-num">113</p><p class="grid-header">მაჟორიტარი კანდიდატი</p></div>
+                        <div class="grid-row-right">
+                            <input onkeypress="return isNumberKey(event)" id="g1" class="but-bold form-input" maxlength="1" value="X">
+                            <input onkeypress="return isNumberKey(event)" id="g2" class="but-bold form-input" maxlength="1" value="1">
+                            <input onkeypress="return isNumberKey(event)" id="g3" class="but-bold form-input" maxlength="1" value="5">
+                            <input onkeypress="return isNumberKey(event)" id="g4" class="but-bold form-input" maxlength="1" value="6">
+                        </div>
+                        <div class="absolute-line"></div>
+                    </div>
+                    <div class="grid-item padding-bottom">
+                        <div class="grid-row-left">
+                            <p class="grid-num">114</p><p class="grid-header">მაჟორიტარი კანდიდატი</p></div>
+                        <div class="grid-row-right">
+                            <input onkeypress="return isNumberKey(event)" id="h1" class="but-bold form-input" maxlength="1" value="X">
+                            <input onkeypress="return isNumberKey(event)" id="h2" class="but-bold form-input" maxlength="1" value="3">
+                            <input onkeypress="return isNumberKey(event)" id="h3" class="but-bold form-input" maxlength="1" value="4">
+                            <input onkeypress="return isNumberKey(event)" id="h4" class="but-bold form-input" maxlength="1" value="4">
+                        </div>
+                        <div style="bottom: 96px !important;" class="absolute-line last-child"></div>
+                    </div>
+                    <div class="absolute-bottom variant1">ნიმუში სასწავლო მიზნებისთვის</div>
+                </div>
+                <div class="grid-item">
+                    <div class="grid-row-left">
+                        <p class="grid-num">6</p><p class="grid-header">ბათილად მიჩნეული საარჩევნო ბიულეტენების რაოდენობა<br><span class="grid-label lower">(სხვა უბნისათვის განკუთვნილი ბათილი საარჩევნო ბიულეტენების რაოდენობა არ ემატება)</span></p></div>
+                    <div class="grid-row-right">
+                        <input onkeypress="return isNumberKey(event)" id="i1" class="but-bold form-input" maxlength="1" value="X">
+                        <input onkeypress="return isNumberKey(event)" id="i2" class="but-bold form-input" maxlength="1" value="X">
+                        <input onkeypress="return isNumberKey(event)" id="i3" class="but-bold form-input" maxlength="1" value="X">
+                        <input onkeypress="return isNumberKey(event)" id="i4" class="but-bold form-input" maxlength="1" value="1">
+                    </div>
+                </div>
+            </div>
+            <div class="ring-numbers">
+                <p class="regular">რეგისტრატორების<br> ბეჭდების ნომრები:</p>
+                <div class="flex-div">
+                    <div class="grid-row-right">
+                        <p class="but-bold less-bold-padding">1</p>
+                        <p class="but-bold less-bold-padding">1</p>
+                        <p class="but-bold less-bold-padding">1</p>
+                        <p class="but-bold less-bold-padding">1</p>
+                        <p class="but-bold less-bold-padding">1</p>
+                        <p class="no-border">,</p>
+                    </div>
+                    <div class="grid-row-right">
+                        <p class="but-bold less-bold-padding">2</p>
+                        <p class="but-bold less-bold-padding">2</p>
+                        <p class="but-bold less-bold-padding">2</p>
+                        <p class="but-bold less-bold-padding">2</p>
+                        <p class="but-bold less-bold-padding">2</p>
+                        <p class="no-border">,</p>
+                    </div>
+                    <div class="grid-row-right">
+                        <p class="but-bold less-bold-padding">3</p>
+                        <p class="but-bold less-bold-padding">3</p>
+                        <p class="but-bold less-bold-padding">3</p>
+                        <p class="but-bold less-bold-padding">3</p>
+                        <p class="but-bold less-bold-padding">3</p>
+                        <p class="no-border">,</p>
+                    </div>
+                    <div class="grid-row-right">
+                        <p class="but-bold less-bold-padding">4</p>
+                        <p class="but-bold less-bold-padding">4</p>
+                        <p class="but-bold less-bold-padding">4</p>
+                        <p class="but-bold less-bold-padding">4</p>
+                        <p class="but-bold less-bold-padding">4</p>
+                        <p class="no-border">,</p>
+                    </div>
+                    <div class="grid-row-right">
+                        <p class="but-bold less-bold-padding">5</p>
+                        <p class="but-bold less-bold-padding">5</p>
+                        <p class="but-bold less-bold-padding">5</p>
+                        <p class="but-bold less-bold-padding">5</p>
+                        <p class="but-bold less-bold-padding">5</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tavikacebi">
+                <div style="width: 48%;" class="tavikacebi-item">
+                    <h4 class="regular">თავმჯდომარე</h4>
+                    <div class="item-div">
+                        <div class="first-child"><p>nino ninoSvili</p><div class="underline"></div></div>
+                        <div class="rotated-line"></div>
+                        <div><p class="last-child">n. ninoSvili</p><div class="underline-second"></div></div>
+                    </div>
+                </div>
+                <div class="tavikacebi-item justify-content-end">
+                    <h4 class="regular">თავმჯდომარის მოადგილე</h4>
+                    <div class="item-div">
+                        <div class="first-child"><p>mariam mariamiZe</p><div class="underline"></div></div>
+                        <div class="rotated-line"></div>
+                        <div><p class="last-child">m. mariamiZe</p><div class="underline-second"></div></div>
+                    </div>
+                </div>
+                <div class="tavikacebi-item">
+                    <h4 class="regular">მდივანი</h4>
+                    <div class="item-div">
+                        <div class="first-child"><p>lali laliSvili</p><div class="underline"></div></div>
+                        <div class="rotated-line"></div>
+                        <div><p class="last-child">l. laliSvili</p><div class="underline-second"></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="members">
+                <h4 class="regular">წევრები</h4>
+                <div class="component">
+                    <div class="item-div">
+                        <div class="first-child"><p>nino niniZe</p><div class="underline"></div></div>
+                        <div class="rotated-line"></div>
+                        <div><p class="last-child">n. niniZe</p><div class="underline-second"></div></div>
+                    </div>
+                    <div class="item-div">
+                        <div class="first-child"><p>roman romanaZe</p><div class="underline"></div></div>
+                        <div class="rotated-line"></div>
+                        <div><p class="last-child">r. romanaZe</p><div class="underline-second"></div></div>
+                    </div>
+                    <div class="item-div">
+                        <div class="first-child"><p>kaxa kaxiZe</p><div class="underline"></div></div>
+                        <div class="rotated-line"></div>
+                        <div><p class="last-child">k. kaxiZe</p><div class="underline-second"></div></div>
+                    </div>
+                    <div class="item-div">
+                        <div class="first-child"><p>daTo asaniZe</p><div class="underline"></div></div>
+                        <div class="rotated-line"></div>
+                        <div><p class="last-child">d. asaniZe</p><div class="underline-second"></div></div>
+                    </div>
+                    <div class="item-div">
+                        <div class="first-child"><p>sofo alaviZe</p><div class="underline"></div></div>
+                        <div class="rotated-line"></div>
+                        <div><p class="last-child">s. alaviZe</p><div class="underline-second"></div></div>
+                    </div>
+                </div>
+                <div class="component">
+                    <div class="item-div">
+                        <div class="first-child"><p>daviT daviTaZe</p><div class="underline"></div></div>
+                        <div class="rotated-line"></div>
+                        <div><p class="last-child">d. daviTaZe</p><div class="underline-second"></div></div>
+                    </div>
+                    <div class="item-div">
+                        <div class="first-child"><p>kaxa kaxiZe</p><div class="underline"></div></div>
+                        <div class="rotated-line"></div>
+                        <div><p class="last-child">k. kaxiZe</p><div class="underline-second"></div></div>
+                    </div>
+                    <div class="item-div">
+                        <div class="first-child"><p>ada aroSiZe</p><div class="underline"></div></div>
+                        <div class="rotated-line"></div>
+                        <div><p class="last-child">a. aroSiZe</p><div class="underline-second"></div></div>
+                    </div>
+                    <div class="item-div">
+                        <div class="first-child"><p>ia iaSvili</p><div class="underline"></div></div>
+                        <div class="rotated-line"></div>
+                        <div><p class="last-child">i. iaSvili</p><div class="underline-second"></div></div>
+                    </div>
+                    <div class="item-div">
+                        <div class="first-child"><p>ciuri gonaSvili</p><div class="underline"></div></div>
+                        <div class="rotated-line"></div>
+                        <div><p class="last-child">c. gonaSvili</p><div class="underline-second"></div></div>
+                    </div>
+                </div>
+                <div class="component">
+                    <div class="item-div">
+                        <div class="first-child"><p>ramaz ramazaZe</p><div class="underline"></div></div>
+                        <div class="rotated-line"></div>
+                        <div><p class="last-child">r. ramazaZe</p><div class="underline-second"></div></div>
+                    </div>
+                    <div class="item-div">
+                        <div class="first-child"><p>salome suTiZe</p><div class="underline"></div></div>
+                        <div class="rotated-line"></div>
+                        <div><p class="last-child">s. suTiZe</p><div class="underline-second"></div></div>
+                    </div>
+                    <div class="item-div">
+                        <div class="first-child"><p>mixeil doliZe</p><div class="underline"></div></div>
+                        <div class="rotated-line"></div>
+                        <div><p class="last-child">m. doliZe</p><div class="underline-second"></div></div>
+                    </div>
+                    <div class="item-div">
+                        <div class="first-child"><p>lola lolaZe</p><div class="underline"></div></div>
+                        <div class="rotated-line"></div>
+                        <div><p class="last-child">l. lolaZe</p><div class="underline-second"></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="date">
+                <div>
+                    <p>შედგენის თარიღი - <span><u>"02"</u><u>04</u></span><span class="margin-left">20<u class="no-left-margin">22</u>წ.,</u></span></p>
+                </div>
+                <div>
+                    <p>დრო: <u>23</u>საათი <u>11</u>წუთი,</p>
+                </div>
+                <div class="relative-div">
+                    <p>კომისიის ბეჭდის ნომერი <span class="ring-code">12345</span></p>
+                    <img src="img/bechedi.svg" alt="bechedi">
+                    <p class="absolute-item">ბ. ა.</p>
+                </div>
+            </div>
+            <div class="last-grid">
+                <div class="element4"><p>№</p></div>
+                <div class="element1">ოქმის მონაცემების გრაფა, რომელსაც არ<br> ეთანხმება კომისიის წევრი</div>
+                <div class="element2">კომისიის წევრის<br> სახელი და გვარი</div>
+                <div class="element3">კომისიის წევრის<br> ხელმოწერა</div>
+                <div class="empty-line1"></div>
+                <div class="empty-line2"></div>
+                <div class="empty-line3"></div>
+                <div class="empty-line4"></div>
+                <p class="absolute-item regular">განსხვავებული აზრი</p>
+            </div>
+            <input type="submit" class="oqmi-submit" value="დადასტურება">
+        </form>
+        <div class="bullets">
+            <h2>II ᲕᲐᲠᲘᲐᲜᲢᲘ<br><span style="font-size: 14px;margin-top: 11px;display: block;">ოქმის დავალების მონაცემები</span></h2>
+            <hr>
+            <ul id="style-1">
+                <li class="resizable">სპეციალურ სიაში ამომრჩეველთა რაოდენობა: <span>7</span></li>
+                <li class="resizable">არჩევნებში მონაწილე ამომრჩეველთა ხელმოწერების რაოდენობა ყველა სახის ამომრჩეველთა სიებში 12 საათზე: <span>230</span> და 17 საათზე: <span>561</span></li>
+                <li class="resizable">ერთიან სიაში ამომრჩეველთა ხელმოწერების რაოდენობა: <span>812</span></li>
+                <li class="resizable">სპეციალურ სიაში ამომრჩეველთა ხელმოწერების რაოდენობა: <span>7</span></li>
+                <li class="resizable">გადასატანი საარჩევნო ყუთის სიაში ამომრჩეველთა ხელმოწერების რაოდენობა: <span>10</span></li>
+                <li class="resizable">რეგისტრატორების ახსნა-განმარტებების მიხედვით გამორჩენილი ხელმოწერების რაოდენობა: <span>2</span></li>
+                <li class="resizable more-top-margin">ბათილად მიჩნეული <span>მაჟორიტარული</span> საარჩევნო ბიულეტენების რაოდენობა: <span>1</span></li>
+                <li class="resizable">საარჩევნო სუბიექტებისთვის მიცემულ ხმათა რაოდენობა:<br><br>N111 მაჟორიტარი კანდიდატი: <span>233</span></li>
+                <li class="resizable">N112 მაჟორიტარი კანდიდატი: <span>97</span></li>
+                <li class="resizable">N113 მაჟორიტარი კანდიდატი: <span>156</span></li>
+                <li class="resizable">N114 მაჟორიტარი კანდიდატი: <span>344</span></li>
+            </ul>
+        </div>
+    </main>
+    <div class="submit-div">
+    </div>
+    <footer class="oqmi-footer">
+        <p>© 2021 ᲔᲚᲔᲥᲢᲠᲝᲜᲣᲚᲘ ᲡᲐᲡᲬᲐᲕᲚᲝ ᲞᲠᲝᲒᲠᲐᲛᲐ „ᲙᲔᲜᲭᲘᲡᲧᲠᲘᲡ ᲨᲔᲓᲔᲒᲔᲑᲘᲡ ᲨᲔᲛᲐᲯᲐᲛᲔᲑᲔᲚᲘ ᲝᲥᲛᲘᲡ ᲨᲔᲓᲒᲔᲜᲘᲡ ᲢᲔᲥᲜᲘᲙᲐ“</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/oqmi.js"></script>
+</body>
+</html>
